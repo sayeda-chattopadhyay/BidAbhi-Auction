@@ -2,6 +2,7 @@
   "name": "bidabhi-auction",
   "version": "0.0.1",
   "description": "An auction website for semester project exam 2",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
