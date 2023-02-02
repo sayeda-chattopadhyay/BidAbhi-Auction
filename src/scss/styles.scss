@@ -1,0 +1,11 @@
+/* Bootstrap  edited styles*/
+
+@import "variables";
+
+/* Bootstrap default styles */
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* Original styles */
+
+@import "./components/header";
