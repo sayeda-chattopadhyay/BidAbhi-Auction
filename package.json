@@ -1,0 +1,26 @@
+{
+  "name": "bidabhi-auction",
+  "version": "0.0.1",
+  "description": "An auction website for semester project exam 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayeda-chattopadhyay/BidAbhi-Auction.git"
+  },
+  "keywords": [
+    "auction",
+    "semester",
+    "project",
+    "noroff",
+    "api"
+  ],
+  "author": "Sayeda Chattopadhyay <sayeda.b@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayeda-chattopadhyay/BidAbhi-Auction/issues"
+  },
+  "homepage": "https://github.com/sayeda-chattopadhyay/BidAbhi-Auction#readme"
+}
