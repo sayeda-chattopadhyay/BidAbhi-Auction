@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass src/scss:dist/css & live-server",
     "watch": "sass --watch src/scss:dist/css & live-server",
-    "format": "prettier -w src/**/*.js"
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/sayeda-chattopadhyay/BidAbhi-Auction#readme",
   "devDependencies": {
+    "eslint": "^8.33.0",
     "live-server": "^1.1.0",
     "prettier": "^2.8.3",
     "sass": "^1.58.0"
