@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BidAbhi | Home " />
+    <title>Login | BidAbhi</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bdb94ef7c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column flex-lg-row justify-content-evenly align-items-center my-5 pt-5"
+    >
+      <div class="row">
+        <div
+          class="col-12 col-md-7 mt-lg-4 d-flex flex-column align-items-center align-items-md-start mx-auto mx-lg-0"
+        >
+          <a href="./index.html"><img src="./images/Logo.png" alt="" /></a>
+          <p class="w-75 fs-4 mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque
+            dolores autem fugiat. Quisquam itaque hic cupiditate, totam natus
+            expedita incidunt tenetur iure dolorum atque dolorem voluptate nemo
+            consequatur id!
+          </p>
+        </div>
+        <div class="col-12 col-md-5">
+          <p class="h2 pb-5">Log in to your account</p>
+          <!-- Log in form -->
+          <form action="" id="loginForm">
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                required
+                pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                title="The email value must be a valid stud.noroff.no or noroff.no email address."
+                autocomplete="false"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                required
+                minlength="8"
+                title="The password value must be at least 8 characters."
+                autocomplete="false"
+                required
+              />
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">
+              Login
+            </button>
+          </form>
+          <!-- Register account -->
+          <div class="row text-center my-4">
+            <p>
+              Don´t have an account?
+              <strong> <a href="./signup.html">Sign Up</a> </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
