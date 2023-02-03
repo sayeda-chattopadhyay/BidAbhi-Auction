@@ -4,46 +4,300 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="BidAbhi is a reliable auction website where you can sell and buy different items"
+    />
+    <title>Home | BidAbhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
   <body>
-    <h1>hello world</h1>
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container-fluid text-center">
+        <a href="/index.html"><img src="/images/Logo.png" alt="logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+          </ul>
+          <span class="navbar-text ms-4">
+            <a
+              href="/signup.html"
+              class="text-decoration-none text-light btn btn-primary ml-5"
+            >
+              <strong>Sign up</strong></a
+            >
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="/images/hammer-719068_1920.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">
+            Responsive left-aligned hero with image
+          </h1>
+          <p class="lead">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">
+              Explore
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label"
-        >Email address</label
-      >
-      <input
-        type="email"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="name@example.com"
-      />
-    </div>
-    <!-- new -->
-    <div class="card" style="width: 18rem">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+    <!-- hero section end -->
+    <!-- heading and search -->
+    <div class="row mb-4 justify-content-evenly">
+      <div class="col-12 col-sm-5 col-md-7 ps-3 ms-5">
+        <p class="h1">Active Listings</p>
+      </div>
+      <!-- <div class="col col-lg-8 mb-4 text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-info" id="newest-first-button">
+            Newest first
+          </button>
+          <button
+            type="button"
+            class="btn btn-info active"
+            id="oldest-first-button"
+          >
+            Oldest first
+          </button>
+        </div>
+      </div> -->
+      <div class="col-12 col-sm-7 col-md-4">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
+
+    <!-- listing container -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-5">
+        <!-- card  1-->
+        <div class="col p-3">
+          <div class="card h-100 border-0 p-2">
+            <a href="/login.html"
+              ><img
+                src="/images/camera.jpg"
+                class="card-img-top"
+                style="height: 22rem; object-fit: cover"
+                alt="api fetch image"
+            /></a>
+            <div class="card-body bg-light">
+              <h3 class="card-title pb-0">Listing title</h3>
+              <p class="card-text">
+                <strong>Description: </strong>listing description
+              </p>
+              <p class="card-text"><strong>Owner: </strong>Owner name</p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0 mt-0">
+              <hr />
+              <p class="mb-0"><strong>Bids: </strong>0</p>
+              <p class="mb-0">
+                <strong>Created: </strong> 3 Mar<span class="small text-muted"
+                  >, 16:20</span
+                >
+              </p>
+              <p class="mb-3">
+                <strong>Ends at: </strong>5 Apr<span class="small text-muted"
+                  >, 17:35</span
+                >
+              </p>
+              <a href="/login.html"
+                ><button class="btn btn-primary" style="width: 50%">
+                  <strong>Bid now</strong>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card  2-->
+        <div class="col p-3">
+          <div class="card h-100 border-0">
+            <a href="/login.html"
+              ><img
+                src="/images/camera.jpg"
+                class="card-img-top"
+                style="height: 22rem; object-fit: cover"
+                alt="api fetch image"
+            /></a>
+            <div class="card-body bg-light">
+              <h3 class="card-title pb-0">Listing title</h3>
+              <p class="card-text">
+                <strong>Description: </strong>listing description
+              </p>
+              <p class="card-text"><strong>Owner: </strong>Owner name</p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0 mt-0">
+              <hr />
+              <p class="mb-0"><strong>Bids: </strong>0</p>
+              <p class="mb-0">
+                <strong>Created: </strong> 3 Mar<span class="small text-muted"
+                  >, 16:20</span
+                >
+              </p>
+              <p class="mb-3">
+                <strong>Ends at: </strong>5 Apr<span class="small text-muted"
+                  >, 17:35</span
+                >
+              </p>
+              <a href="/login.html"
+                ><button class="btn btn-primary" style="width: 50%">
+                  <strong>Bid now</strong>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col p-3">
+          <div class="card h-100 border-0">
+            <a href="/login.html"
+              ><img
+                src="/images/camera.jpg"
+                class="card-img-top"
+                style="height: 22rem; object-fit: cover"
+                alt="api fetch image"
+            /></a>
+            <div class="card-body bg-light">
+              <h3 class="card-title pb-0">Listing title</h3>
+              <p class="card-text">
+                <strong>Description: </strong>listing description
+              </p>
+              <p class="card-text"><strong>Owner: </strong>Owner name</p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0 mt-0">
+              <hr />
+              <p class="mb-0"><strong>Bids: </strong>0</p>
+              <p class="mb-0">
+                <strong>Created: </strong> 3 Mar<span class="small text-muted"
+                  >, 16:20</span
+                >
+              </p>
+              <p class="mb-3">
+                <strong>Ends at: </strong>5 Apr<span class="small text-muted"
+                  >, 17:35</span
+                >
+              </p>
+              <a href="/login.html"
+                ><button class="btn btn-primary" style="width: 50%">
+                  <strong>Bid now</strong>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col p-3">
+          <div class="card h-100 border-0">
+            <a href="/login.html"
+              ><img
+                src="/images/camera.jpg"
+                class="card-img-top"
+                style="height: 22rem; object-fit: cover"
+                alt="api fetch image"
+            /></a>
+            <div class="card-body bg-light">
+              <h3 class="card-title pb-0">Listing title</h3>
+              <p class="card-text">
+                <strong>Description: </strong>listing description
+              </p>
+              <p class="card-text"><strong>Owner: </strong>Owner name</p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0 mt-0">
+              <hr />
+              <p class="mb-0"><strong>Bids: </strong>0</p>
+              <p class="mb-0">
+                <strong>Created: </strong> 3 Mar<span class="small text-muted"
+                  >, 16:20</span
+                >
+              </p>
+              <p class="mb-3">
+                <strong>Ends at: </strong>5 Apr<span class="small text-muted"
+                  >, 17:35</span
+                >
+              </p>
+              <a href="/login.html"
+                ><button class="btn btn-primary" style="width: 50%">
+                  <strong>Bid now</strong>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-footer text-white mx-3">
+      <footer class="row row-cols-1 row-cols-sm-2 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <div class="">
+            <img src="/images/Logo.png" alt="logo" />
+          </div>
+          <br />
+          <p class="text-white">© 2023 BidAbhi</p>
+          <p class="text-white">
+            <strong>Creater By :</strong>Sayeda Chattopadhyay
+          </p>
+        </div>
+        <div class="col mb-3">
+          <h5>Built With</h5>
+          <hr />
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Noroff API</li>
+            <li class="nav-item mb-2">SASS</li>
+            <li class="nav-item mb-2">HTML</li>
+            <li class="nav-item mb-2">CSS</li>
+            <li class="nav-item mb-2">JavaScript</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
