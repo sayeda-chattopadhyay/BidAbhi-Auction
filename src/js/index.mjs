@@ -12,6 +12,10 @@ function router() {
     case "/login.html":
       handler.setLoginFormListener();
       break;
+
+    case "/profile.html":
+      handler.setLogoutBUttonListener();
+      break;
   }
 }
 
