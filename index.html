@@ -16,11 +16,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <script
-      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="/src/js/index.mjs" defer type="module"></script>
   </head>
   <body>
     <!-- nav bar -->
@@ -126,7 +121,10 @@
 
     <!-- listing container -->
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-5">
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-5"
+        id="listingsContainer"
+      >
         <!-- card  1-->
         <div class="col p-3">
           <div class="card h-100 border-0 p-2">
@@ -203,6 +201,7 @@
             </div>
           </div>
         </div>
+        <!-- card  2-->
         <div class="col p-3">
           <div class="card h-100 border-0">
             <a href="/login.html"
@@ -240,6 +239,7 @@
             </div>
           </div>
         </div>
+        <!-- card  2-->
         <div class="col p-3">
           <div class="card h-100 border-0">
             <a href="/login.html"
@@ -307,5 +307,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
