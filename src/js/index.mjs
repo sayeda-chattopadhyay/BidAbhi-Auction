@@ -1,5 +1,7 @@
 import * as handler from "./handlers/index.mjs";
 
+import * as listings from "./api/listings/index.mjs";
+
 function router() {
   const path = location.pathname;
   console.log(path);
@@ -7,6 +9,7 @@ function router() {
   switch (path) {
     case "/signUp.html":
       handler.setRegisterFormListener();
+
       break;
 
     case "/login.html":
@@ -15,6 +18,10 @@ function router() {
 
     case "/profile.html":
       handler.setLogoutBUttonListener();
+      break;
+
+    case "/index.html":
+      listings.getAllListings();
       break;
   }
 }
