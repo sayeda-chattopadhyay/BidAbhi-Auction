@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Here you can see the details of a listing"
+    />
+    <title>Listing Item | BidAbhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/index.mjs" defer type="module"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container text-center">
+        <a href="/index.html"><img src="/images/Logo.png" alt="logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item fs-5">
+              <button class="nav-link border border-0" href="" id="logOut">
+                Log out
+              </button>
+            </li>
+          </ul>
+          <span class="navbar-text ms-4">
+            <a href="/profile.html">
+              <img src="/images/Rectangle 10.jpg" class="rounded-circle ml-5"
+              width=50" height="50" >
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-5 py-5">
+        <!-- item image -->
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="/images/card image.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt=""
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <!-- item description -->
+        <div class="col-12 col-md-6 d-flex flex-column">
+          <div class="my-3">
+            <p class="h1">Item title</p>
+            <p class="lh-lg" id="item-Description">
+              Lorem ipsum dolor sit m, mollitia sit ratione ad aliquid animi
+              corporis non ipsum dolorem magnam distinctio quidem molestiae
+              officia sed veniam numquam quisquam.
+            </p>
+          </div>
+          <p class="fs-5"><strong>Owner : </strong>Owner Name</p>
+          <p class="fs-5"><strong>Date added : </strong>date</p>
+          <p class="fs-5"><strong>Ends at : </strong>Date</p>
+          <p class="fs-5"><strong>Total Bids : </strong>40</p>
+          <p class="fs-5"><strong>Highest Bid : </strong>Ending date</p>
+          <p class="fs-5"><strong>Current Winner : </strong>Name</p>
+          <!-- place your bid -->
+          <div class="row my-5">
+            <div class="col">
+              <h2 class="text-black text-end">Your bid</h2>
+            </div>
+            <div class="col">
+              <div class="form-floating me-lg-5 me-md-5">
+                <form id="bid-form">
+                  <input
+                    type="number"
+                    name="bid-amount"
+                    id="bid-amount"
+                    class="form-control"
+                    placeholder="Amount"
+                    title="Please enter your bid here"
+                    required=""
+                  />
+                  <label
+                    class="was-validated"
+                    for="bid-amount"
+                    style="display: none"
+                    >Amount</label
+                  >
+                  <button
+                    type="submit"
+                    class="btn bg-primary mt-2 px-3 py-2 text-white"
+                    id="bid-button"
+                  >
+                    <strong>Place Your Bid</strong>
+                  </button>
+                  <p class="mt-3" id="error-message" style="display: none">
+                    You do not have enough credits.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Bid History Heading -->
+    <div class="row mb-4 justify-content-evenly">
+      <div class="col-12 col-sm-5 col-md-7 ps-3 ms-5">
+        <p class="h1">Bid history</p>
+      </div>
+    </div>
+    <!-- Bid History List -->
+    <div class="container-fluid">
+      <div class="container bg-light">
+        <div class="row justify-content-center align-items-center">
+          <ul class="col" id="bidHistory">
+            <li class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4 p-4">
+                  <img
+                    src="/images/Rectangle 10.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Bid amount :<strong> 200$</strong></p>
+                    <p class="card-text">
+                      <small class="text-muted">Date:</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Time:</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4 p-4">
+                  <img
+                    src="/images/Rectangle 10.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Bid amount :<strong> 200$</strong></p>
+                    <p class="card-text">
+                      <small class="text-muted">Date:</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Time:</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid bg-footer text-white mx-3">
+      <footer class="row row-cols-1 row-cols-sm-2 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <div class="">
+            <img src="/images/Logo.png" alt="logo" />
+          </div>
+          <br />
+          <p class="text-white">© 2023 BidAbhi</p>
+          <p class="text-white">
+            <strong>Creater By :</strong>Sayeda Chattopadhyay
+          </p>
+        </div>
+        <div class="col mb-3">
+          <h5>Built With</h5>
+          <hr />
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Noroff API</li>
+            <li class="nav-item mb-2">SASS</li>
+            <li class="nav-item mb-2">HTML</li>
+            <li class="nav-item mb-2">CSS</li>
+            <li class="nav-item mb-2">JavaScript</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
