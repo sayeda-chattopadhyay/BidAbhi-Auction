@@ -17,22 +17,19 @@ function router() {
 
     case "/signUp.html":
       handler.setRegisterFormListener();
-
       break;
 
     case "/profile.html":
       handler.setLogoutBUttonListener();
-      // ui.displaySingleProfile();
-      // api.getProfileDetails();
-
       break;
+    // ui.displaySingleProfile();
+    // api.getProfileDetails();
 
     case "/index.html":
-      // listings.getAllListings();
       ui.displayAllListings();
       handler.setLogoutBUttonListener();
-
       break;
+    // listings.getAllListings();
   }
 }
 
