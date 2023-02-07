@@ -1,4 +1,4 @@
-import { listingsURL } from "../constants.mjs";
+import { activeListingURL } from "../constants.mjs";
 
 import { load } from "../../storage/index.mjs";
 
@@ -8,7 +8,7 @@ import { load } from "../../storage/index.mjs";
  */
 
 export async function getAllListings() {
-  const url = listingsURL;
+  const url = activeListingURL;
 
   const token = load("token");
 
@@ -19,6 +19,10 @@ export async function getAllListings() {
     },
   });
 
-  const listings = response.json();
-  console.log(listings);
+  if (response.ok) {
+    return await response.json();
+  }
+
+  // const json = await response.json();
+  // console.log(json);
 }

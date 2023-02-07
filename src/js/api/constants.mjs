@@ -17,7 +17,17 @@ export const loginURL = `${baseURL}${authLogin}`;
 export const profile = "/profile";
 export const profileURL = `${baseURL}${profile}`;
 
-// Auction listings endpoints
+// Auction All listings endpoints
 
 export const listings = "/listings";
-export const listingsURL = `${baseURL}${listings}`;
+export const listingsBaseURL = `${baseURL}${listings}`;
+
+// Auction Active listings endpoints
+
+export const activeListing = "?_active=true";
+export const activeListingURL = `${listingsBaseURL}${activeListing}`;
+
+// The listings can be sorted with the sort flags:
+
+export const listingSorts = "?sort=created&sortOrder=desc";
+export const listingSortsURL = `${listingsBaseURL}${activeListing}`;

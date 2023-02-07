@@ -1,6 +1,8 @@
 import * as handler from "./handlers/index.mjs";
 
-import * as listings from "./api/listings/index.mjs";
+import * as ui from "./ui/index.mjs";
+
+// import * as listings from "./api/listings/index.mjs";
 
 function router() {
   const path = location.pathname;
@@ -21,7 +23,9 @@ function router() {
       break;
 
     case "/index.html":
-      listings.getAllListings();
+      // listings.getAllListings();
+      ui.displayAllListings();
+
       break;
   }
 }
