@@ -14,7 +14,7 @@ export const loginURL = `${baseURL}${authLogin}`;
 
 // Auction profiles endpoints
 
-export const profile = "/profile";
+export const profile = "/profiles/";
 export const profileURL = `${baseURL}${profile}`;
 
 // Auction All listings endpoints
