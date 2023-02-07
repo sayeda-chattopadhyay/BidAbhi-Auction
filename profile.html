@@ -21,6 +21,11 @@
       defer
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
+    <!-- <script
+      src="/src/js/ui/displaySingleProfile.mjs"
+      defer
+      type="module"
+    ></script> -->
   </head>
   <body>
     <!-- nav bar -->
@@ -59,7 +64,7 @@
       </div>
     </nav>
     <!-- hero section -->
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-8 px-4 py-5" id="profileDetailsContainer">
       <div class="row align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img
@@ -71,7 +76,6 @@
             loading="lazy"
           />
         </div>
-
         <div class="col-12 col-md-6 d-flex flex-column">
           <div class="my-4">
             <p class="h1">Mark_Robinson</p>
