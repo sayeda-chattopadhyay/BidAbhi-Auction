@@ -14,13 +14,15 @@ export const loginURL = `${baseURL}${authLogin}`;
 
 // Auction profiles endpoints
 
-export const profile = "/profiles/";
-export const profileURL = `${baseURL}${profile}`;
+export const profile = "/profiles";
+export const profileURL = `${baseURL}${profile}${"/"}`;
+console.log(profileURL);
 
 // Auction All listings endpoints
 
 export const listings = "/listings";
 export const listingsBaseURL = `${baseURL}${listings}`;
+console.log(listingsBaseURL);
 
 // Auction Active listings endpoints
 
@@ -31,3 +33,6 @@ export const activeListingURL = `${listingsBaseURL}${activeListing}`;
 
 export const listingSorts = "?sort=created&sortOrder=desc";
 export const listingSortsURL = `${listingsBaseURL}${activeListing}`;
+
+export const singlelistingUrl = `${listingsBaseURL}${"/"}`;
+console.log(singlelistingUrl);
