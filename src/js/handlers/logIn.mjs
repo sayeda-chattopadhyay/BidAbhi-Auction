@@ -14,7 +14,7 @@ export function setLoginFormListener() {
       try {
         // send it to Api
         await login(profile);
-        window.location.replace("/profile.html");
+        window.location.replace("/index.html");
       } catch (error) {
         console.log("error:", error);
       }
