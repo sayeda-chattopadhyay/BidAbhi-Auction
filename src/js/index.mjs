@@ -30,6 +30,10 @@ function router() {
       handler.setLogoutBUttonListener();
       break;
     // listings.getAllListings();
+
+    case "/singleListing.html":
+      handler.setLogoutBUttonListener();
+      break;
   }
 }
 
