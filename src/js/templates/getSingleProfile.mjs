@@ -1,20 +1,13 @@
-// import {getProfileDetails} from "../api/profiles/getSingleProfile"
-
-// const profileDetails = "getProfileDetails";
+const profileDetailsContainer = document.getElementById(
+  "profileDetailsContainer"
+);
 
 export function createSingleProfileHTML(profile) {
-  const profileDetailsContainer = document.getElementById(
-    "profileDetailsContainer"
-  );
-
-  //   if (listings.length === 0) {
-  //     return listingsContainer.innerHTML === "No item found";
-  //   }
+  if (profile.length === 0) {
+    return profileDetailsContainer.innerHTML === "No profile found";
+  }
 
   profileDetailsContainer.innerHTML = "";
-
-  //   profile.forEach(function (profileData) {
-  //     const { name, email, avatar, credits, wins, _count } = profileData;
 
   profileDetailsContainer.innerHTML += `  <div class="row align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
@@ -46,15 +39,11 @@ export function createSingleProfileHTML(profile) {
           </div>
           <div class="d-f flex-column">
             <p class="fw-bold" id="userFollowes">Wins</p>
-            <p></p>
+            <p>${profile.wins}</p>
           </div>
           <div class="d-f flex-column">
             <p class="fw-bold" id="userFollowing">Bids</p>
             <p></p>
-          </div>
-          <div class="d-f flex-column">
-            <p class="fw-bold" id="userFollowing">Favourites</p>
-            <p>1</p>
           </div>
         </div>
         <div class="my-4">
@@ -68,20 +57,4 @@ export function createSingleProfileHTML(profile) {
         </div>
       </div>
     </div>`;
-  //   });
 }
-
-// function createHTML(details) {
-//     const specificPostContainer = document.getElementById("specificPost");
-
-//     specificPostContainer.innerHTML += ` <div class="card" style="width: 18rem;">
-//                                               <div class="">
-//                                                   <img src="${details.media}" class="card-img-top img-thumbnail style="width: 18rem;height : 18rem;" alt="${details.title}"/>
-//                                               </div>
-//                                               <div class="card-body">
-//                                                   <h2 class="card-title">${details.title}</h2>
-//                                                   <p class="card-text">${details.body}</p>
-//                                                   <p class="card-text">By ${details.created}</p>
-//                                               </div>
-//                                           </div>`;
-//   }
