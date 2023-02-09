@@ -13,7 +13,7 @@ export function createAllListingsHTML(listings) {
 
     listingsContainer.innerHTML += `<div class="col p-3">
                                         <div class="card h-100 border-0 p-2">
-                                            <a href="/login.html"
+                                            <a href=""
                                                 ><img
                                                 src="${media}"
                                                 class="card-img-top"
@@ -43,7 +43,7 @@ export function createAllListingsHTML(listings) {
                                                     >, 17:35</span
                                                 >
                                                 </p>
-                                                 <a href="/item.html/?id=${id}"class="btn btn-primary" style="width: 50%">
+                                                 <a href="/singleListing.html?id=${id}"class="btn btn-primary" style="width: 50%">
                                                             <strong>View Item</strong>
                                                         </a>
                                             </div>
