@@ -12,7 +12,6 @@ import { load } from "../../storage/index.mjs";
 // console.log(token);
 
 export async function createListing(listingData) {
-    
   const createListingUrl = listingsBaseURL;
 
   const token = load("token");
@@ -32,3 +31,5 @@ export async function createListing(listingData) {
   const json = await response.json();
   console.log(json);
 }
+
+//note- add try and catch
