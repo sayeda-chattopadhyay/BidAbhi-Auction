@@ -31,8 +31,6 @@ export async function getAllListingsByProfile() {
     createAllProfileListingsHTML(json);
 
     console.log(json);
-   
-
   } catch (error) {
     console.log(error);
   }
