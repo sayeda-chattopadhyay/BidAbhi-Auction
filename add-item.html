@@ -17,12 +17,12 @@
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <!-- <script src="/src/js/index.mjs" defer type="module"></script> -->
-    <script
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <!-- <script
       src="/src/js/handlers/createListing.mjs"
       defer
       type="module"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <!-- nav bar -->
@@ -80,7 +80,7 @@
                 required
               />
             </div>
-            <!-- <div class="form-group mb-3">
+            <div class="form-group mb-3">
               <label for="description" class="form-label">Description</label>
               <textarea
                 class="form-control p-2"
@@ -90,7 +90,7 @@
                 maxlength="240"
                 placeholder="Description your item"
               ></textarea>
-            </div> -->
+            </div>
             <div class="form-group mb-3">
               <label for="endsAt">Ending Date</label>
               <input
@@ -98,6 +98,17 @@
                 type="datetime-local"
                 name="endsAt"
                 title="an ending date is required"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="tags">Tags (separate by comma)</label>
+              <input
+                class="form-control"
+                type="text"
+                name="tags"
+                placeholder="tag1 ,tag2 ,tag3 "
+                title="add tags to your listing"
                 required
               />
             </div>
