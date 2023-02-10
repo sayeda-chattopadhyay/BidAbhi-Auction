@@ -51,3 +51,6 @@ export async function getSingleListing(id) {
 }
 
 getSingleListing(id);
+
+
+//Note- try and catch
