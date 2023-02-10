@@ -28,11 +28,17 @@ function router() {
     case "/index.html":
       ui.displayAllListings();
       handler.setLogoutBUttonListener();
+      handler.setCreateListingListener();
       break;
     // listings.getAllListings();
 
     case "/singleListing.html":
       handler.setLogoutBUttonListener();
+      break;
+
+    case "/add-item.html":
+      // ui.displayAllListings();
+      handler.setCreateListingListener();
       break;
   }
 }
