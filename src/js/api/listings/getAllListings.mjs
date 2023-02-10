@@ -1,4 +1,5 @@
 import { activeListingURL } from "../constants.mjs";
+console.log(activeListingURL);
 
 import { load } from "../../storage/index.mjs";
 
@@ -26,3 +27,5 @@ export async function getAllListings() {
   // const json = await response.json();
   // console.log(json);
 }
+
+// note- need to do try and catch block
