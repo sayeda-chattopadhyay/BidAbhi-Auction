@@ -13,6 +13,12 @@ export function setCreateListingListener() {
 
       console.log("listing", listingData);
 
+      if (!listingData.tags.trim()) {
+        delete listingData.tags;
+      } else {
+        listingData.tags = listingData.tags.split(",");
+      }
+
       if (!listingData.media.trim()) {
         delete listingData.media;
       } else {
@@ -26,6 +32,8 @@ export function setCreateListingListener() {
         // Deiplay all listings
 
         displayAllListings();
+        alert("Your listing is created");
+        window.location.replace("/profile.html");
       } catch (error) {
         console.log(error);
       }
@@ -33,4 +41,4 @@ export function setCreateListingListener() {
   }
 }
 
-setCreateListingListener();
+// setCreateListingListener();
