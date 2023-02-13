@@ -6,7 +6,7 @@
 
 export function setLogoutBUttonListener() {
   const logOutButton = document.getElementById("logOut");
-  console.log(logOutButton);
+  // console.log(logOutButton);
 
   if (logOutButton) {
     logOutButton.addEventListener("click", () => {

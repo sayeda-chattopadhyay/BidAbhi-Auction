@@ -1,5 +1,5 @@
 import { activeListingURL } from "../constants.mjs";
-console.log(activeListingURL);
+// console.log(activeListingURL);
 
 import { load } from "../../storage/index.mjs";
 
@@ -10,6 +10,7 @@ import { load } from "../../storage/index.mjs";
 
 export async function getAllListings() {
   const url = activeListingURL;
+  // console.log(url);
 
   const token = load("token");
 
