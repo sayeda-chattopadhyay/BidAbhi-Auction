@@ -1,15 +1,8 @@
 import { listingsBaseURL } from "../constants.mjs";
 
-console.log(listingsBaseURL);
+// console.log(listingsBaseURL);
 
 import { load } from "../../storage/index.mjs";
-
-// console.log(load);
-
-// const method = "post";
-
-// const token = load("token");
-// console.log(token);
 
 export async function createListing(listingData) {
   const createListingUrl = listingsBaseURL;
