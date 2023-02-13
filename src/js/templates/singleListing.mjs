@@ -20,13 +20,11 @@ export function createSingleListingHTML(listing) {
                                                     ${listing.description}
                                                     </p>
                                                 </div>
-                                                <p class="fs-5"><strong>Id : </strong>${listing.id}</p>
-                                                <p class="fs-5"><strong>Tags : </strong>${listing.tags}</p>
                                                 <p class="fs-5"><strong>Owner : </strong>${listing.seller.name}</p>
                                                 <p class="fs-5"><strong>Created : </strong>${listing.created}</p>
                                                 <p class="fs-5"><strong>Ends at : </strong>${listing.endsAt}</p>
-                                                <p class="fs-5"><strong>Total Bids : </strong>${listing._count}</p>
-                                                <p class="fs-5"><strong>Highest Bid : </strong></p>
+                                                <p class="fs-5"><strong>Bidder Name : </strong>${listing.bids[0].bidderName}</p>
+                                                <p class="fs-5"><strong>Bidder Name : </strong>${listing.bids[0].amount}</p>
                                                 <p class="fs-5"><strong>Current Winner : </strong>Name</p>
                                                 <div class="row my-5">
                                                     <div class="col">
