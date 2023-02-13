@@ -12,3 +12,15 @@ export async function displayAllListings() {
     // templates.displayError("postCardsLists", error); // ui.displayError("postCardsLists", error) displays error message
   }
 }
+
+// search listing
+
+// export async function displaySearchedListings(tag) {
+//   try {
+//     // templates.displayLoading("postCardsLists");
+//     const listings = await api.searchListing(tag);
+//     templates.createAllListingsHTML(listings);
+//   } catch (error) {
+//     // templates.displayError("postCardsLists", error);
+//   }
+// }
