@@ -29,6 +29,7 @@ function router() {
       ui.displayAllListings();
       handler.setLogoutBUttonListener();
       handler.setCreateListingListener();
+      handler.setSearchListingListener();
       break;
     // listings.getAllListings();
 
