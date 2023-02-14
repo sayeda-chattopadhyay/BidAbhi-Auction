@@ -15,3 +15,34 @@ export function setSearchListingListener() {
     });
   }
 }
+
+//trying again
+
+// const form = document.querySelector("form#searchListing");
+
+// import { createAllListingsHTML } from "../templates/allListings.mjs";
+
+// const searchInput = document.querySelector("input#searchInput");
+// console.log(searchInput);
+
+// export function SearchListingListener(listings) {
+//   searchInput.addEventListener("input", (event) => {
+//     // event.preventDefault();
+//     let value = event.target.value.toLowerCase();
+//     console.log(value);
+
+//     let searchedArray = [];
+
+//     for (let i = 0; i < listings.length; i++) {
+//       let currentListing = listings[i];
+
+//       if (
+//         currentListing.title.toLowerCase().includes(value) ||
+//         currentListing.description.toLowerCase().includes(value)
+//       ) {
+//         searchedArray.push(currentListing);
+//       }
+//     }
+//     createAllListingsHTML(searchedArray);
+//   });
+// }
