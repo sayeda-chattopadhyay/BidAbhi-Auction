@@ -1,21 +1,47 @@
 export function createAllListingsHTML(listings) {
   const listingsContainer = document.getElementById("listingsContainer");
 
-  //   if (listings.length === 0) {
-  //     return listingsContainer.innerHTML === "No item found";
-  //   }
+  //   console.log(listings);
 
   listingsContainer.innerHTML = "";
 
   listings.forEach(function (listing) {
+    // console.log(listing);
+
     const { id, title, description, media, created, endsAt, _count, tags } =
-      listing;
+      listing; // destructuring
+
+    let imgMedia = media;
+
+    if (media.length === 0) {
+      imgMedia = ["/images/no-image-2.jpg"];
+    }
+
+    const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
+      month: "short",
+      day: "numeric",
+    });
+
+    const formattedCreatedTime = new Date(created).toLocaleTimeString("en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+
+    const formattedEndDate = new Date(endsAt).toLocaleDateString("en-us", {
+      month: "short",
+      day: "numeric",
+    });
+
+    const formattedEndTime = new Date(created).toLocaleTimeString("en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
     listingsContainer.innerHTML += `<div class="col p-3">
                                         <div class="card h-100 border-0 p-2">
-                                            <a href=""
+                                            <a href="/singleListing.html?id=${id}"
                                                 ><img
-                                                src="${media}"
+                                                src="${imgMedia}"
                                                 class="card-img-top"
                                                 style="height: 22rem; object-fit: cover"
                                                 alt="${title}"
@@ -34,13 +60,13 @@ export function createAllListingsHTML(listings) {
                                                 <hr />
                                                 <p class="mb-0"><strong>Bids: </strong>${_count.bids}</p>
                                                 <p class="mb-0">
-                                                <strong>Created: </strong>${created}<span class="small text-muted"
-                                                    >, 16:20</span
+                                                <strong>Created: </strong>${formattedCreatedDate}<span class="small text-muted"
+                                                    >, ${formattedCreatedTime}</span
                                                 >
                                                 </p>
                                                 <p class="mb-3">
-                                                <strong>Ends at: </strong>${endsAt}<span class="small text-muted"
-                                                    >, 17:35</span
+                                                <strong>Ends at: </strong>${formattedEndDate}<span class="small text-muted"
+                                                    >, ${formattedEndTime}</span
                                                 >
                                                 </p>
                                                  <a href="/singleListing.html?id=${id}"class="btn btn-primary" style="width: 50%">
