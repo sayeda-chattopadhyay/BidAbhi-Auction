@@ -3,6 +3,8 @@ const profileDetailsContainer = document.getElementById(
 );
 
 export function createSingleProfileHTML(profile) {
+  console.log(profile);
+
   if (profile.length === 0) {
     return profileDetailsContainer.innerHTML === "No profile found";
   }
@@ -10,6 +12,7 @@ export function createSingleProfileHTML(profile) {
   profileDetailsContainer.innerHTML = "";
 
   profileDetailsContainer.innerHTML += `  <div class="row align-items-center g-5 py-5">
+  
       <div class="col-10 col-sm-8 col-lg-6">
         <img
           src="${profile.avatar}"
@@ -35,7 +38,7 @@ export function createSingleProfileHTML(profile) {
         >
           <div class="d-flex-column">
             <p class="fw-bold" id="userPosts">Listings</p>
-            <p></p>
+            
           </div>
           <div class="d-f flex-column">
             <p class="fw-bold" id="userFollowes">Wins</p>
