@@ -11,15 +11,15 @@ export function createSingleProfileHTML(profile) {
 
   profileDetailsContainer.innerHTML = "";
 
-  profileDetailsContainer.innerHTML += `  <div class="row align-items-center g-5 py-5">
+  profileDetailsContainer.innerHTML += ` <div class="row align-items-center g-5 py-5">
   
-      <div class="col-10 col-sm-8 col-lg-6">
+      <div class="col-12 col-md-8 col-lg-6">
         <img
           src="${profile.avatar}"
           class="d-block mx-lg-auto img-fluid rounded-circle"
           alt="${profile.name}"
-          width="500"
-          height="500"
+          width="300"
+          height="300"
           loading="lazy"
         />
       </div>

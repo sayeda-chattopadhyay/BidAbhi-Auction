@@ -36,6 +36,7 @@ function router() {
 
     case "/singleListing.html":
       handler.setLogoutBUttonListener();
+      handler.setCreateBidListener();
       break;
 
     case "/add-item.html":
