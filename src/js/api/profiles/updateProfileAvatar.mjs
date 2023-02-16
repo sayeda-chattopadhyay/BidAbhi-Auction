@@ -32,9 +32,11 @@ export async function updateProfileAvatar(profileAvatar) {
     });
     // if (response.ok) {
     //   return await response.json();
+
     // }
     const Updatedprofile = await response.json();
     console.log(Updatedprofile);
+    window.location.reload();
   } catch (error) {
     console.log(error);
   }

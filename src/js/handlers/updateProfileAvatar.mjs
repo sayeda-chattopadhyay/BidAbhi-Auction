@@ -1,4 +1,4 @@
-import { updateProfileAvatar } from "../api/profiles/updateProfileAvatar.mjs";
+import { updateProfileAvatar } from "../api/profiles/index.mjs";
 
 export async function setUpdateProfileAvatar() {
   const form = document.querySelector("form#updateProfileAvatar");
