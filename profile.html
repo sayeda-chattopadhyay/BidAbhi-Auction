@@ -22,6 +22,11 @@
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
     <script
+      src="/src/js/api/profiles/getAllBidsByProfile.mjs"
+      defer
+      type="module"
+    ></script>
+    <script
       src="/src/js/api/profiles/getSingleProfile.mjs"
       defer
       type="module"
@@ -32,10 +37,21 @@
       type="module"
     ></script>
     <!-- <script
-      src="/src/js/ui/displaySingleProfile.mjs"
+      src="/src/js/api/profiles/updateProfileAvatar.mjs"
       defer
       type="module"
     ></script> -->
+    <script
+      src="/src/js/handlers/updateProfileAvatar.mjs"
+      defer
+      type="module"
+    ></script>
+
+    <script
+      src="/src/js/ui/displaySingleProfile.mjs"
+      defer
+      type="module"
+    ></script>
   </head>
   <body>
     <!-- nav bar -->
@@ -74,10 +90,64 @@
       </div>
     </nav>
     <!-- hero section -->
+    <div class="container-fluid text-center border border-primary">
+      <div class="container col-xxl-8 px-4" id="profileDetailsContainer"></div>
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Update Avatar
+        </button>
+      </div>
+    </div>
     <div
-      class="container col-xxl-8 px-4 py-5"
-      id="profileDetailsContainer"
-    ></div>
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <form class="modal-dialog" id="updateProfileAvatar">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Update Avatar
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="url"
+                class="form-control"
+                id="floatingInput"
+                name="avatar"
+                placeholder="insert profile avatar url"
+                required
+              />
+              <label for="floatingInput">Update your avatar</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="/profile.html"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              >Cancel</a
+            >
+            <button class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <hr />
 
     <!-- heading and search -->
@@ -100,6 +170,13 @@
 
     <!-- listing container -->
     <div class="container">
+      <div class="h1 text-center">Your Bids</div>
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-5"
+        id="allBidsByProfileContainer"
+      ></div>
+      <hr />
+      <div class="h1 text-center">Your Listings</div>
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-5"
         id="allListingByProfileContainer"

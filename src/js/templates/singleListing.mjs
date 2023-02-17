@@ -51,10 +51,13 @@ export function createSingleListingHTML(listing) {
                                                 <div class="col-12 col-md-6 d-flex flex-column">
                                                 <div class="my-3">
                                                     <p class="h1">${title}</p>
-                                                    <p class="lh-lg" id="item-Description">
+                                                    <p class="lh-lg fs-6" id="item-Description">
+                                                    <strong>Description:
                                                     ${description}
+                                                    </strong>
                                                     </p>
                                                 </div>
+                                                <hr>
                                                 <p class="fs-5"><strong>Seller : </strong>${seller.name}</p>
                                                 <p class="fs-5"><strong>Created : </strong>${formattedCreatedDate}<span class="small text-muted" >, ${formattedCreatedTime}</span ></p>
                                                 <p class="fs-5"><strong>Ends at : </strong>${formattedEndDate}<span class="small text-muted" >, ${formattedEndTime}</span ></p>

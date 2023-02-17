@@ -5,4 +5,4 @@ export * from "./getAllListings.mjs";
 export * from "./createListing.mjs";
 export * from "./searchListing.mjs";
 export * from "./createBid.mjs";
-export * from "./updateProfileAvatar.mjs";
+// export * from "./updateProfileAvatar.mjs";

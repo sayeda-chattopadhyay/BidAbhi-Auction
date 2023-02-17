@@ -1,6 +1,6 @@
 import * as handler from "./handlers/index.mjs";
 
-import * as ui from "./ui/index.mjs";
+// import * as ui from "./ui/index.mjs";
 
 // import * as api from "./api/profiles/index.mjs";
 
@@ -21,15 +21,17 @@ function router() {
 
     case "/profile.html":
       handler.setLogoutBUttonListener();
+      // api.getAllBidsByProfile();
+      // api.getAllListingsByProfile();
+      // api.getProfileDetails();
       break;
     // ui.displaySingleProfile();
-    // api.getProfileDetails();
 
     case "/index.html":
-      ui.displayAllListings();
+      // ui.displayAllListings();
       handler.setLogoutBUttonListener();
       handler.setCreateListingListener();
-      handler.setSearchListingListener();
+      // handler.setSearchListingListener();
       // handler.SearchListingListener();
       break;
     // listings.getAllListings();

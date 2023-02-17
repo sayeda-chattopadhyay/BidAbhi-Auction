@@ -1,6 +1,7 @@
 import * as api from "../api/listings/index.mjs";
-import * as templates from "../templates/index.mjs";
+// import * as templates from "../templates/index.mjs";
 // import * as handler from "../handlers/index.mjs";
+import * as templates from "../templates/allListings.mjs";
 
 export async function displayAllListings() {
   try {
@@ -24,3 +25,4 @@ export async function displayAllListings() {
 //     // templates.displayError("postCardsLists", error);
 //   }
 // }
+displayAllListings();

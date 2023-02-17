@@ -12,3 +12,4 @@ export async function displaySearchedListings(tag) {
     // templates.displayError("postCardsLists", error);
   }
 }
+
