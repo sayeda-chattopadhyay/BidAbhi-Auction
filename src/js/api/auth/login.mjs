@@ -30,6 +30,7 @@ export async function login(profile) {
       storage.save("profile", profileDetails);
 
       alert("You are now logged in");
+      window.location.replace("/index.html");
     } else {
       throw new Error("Incorrect username or password");
     }
