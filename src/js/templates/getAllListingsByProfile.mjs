@@ -4,9 +4,9 @@ const allListingByProfileContainer = document.getElementById(
 );
 
 export function createAllProfileListingsHTML(listings) {
-  //   if (listings.length === 0) {
-  //     return listingsContainer.innerHTML === "No item found";
-  //   }
+  if (listings.length === 0) {
+    return allListingByProfileContainer.innerHTML === "No item found";
+  }
 
   allListingByProfileContainer.innerHTML = "";
 
