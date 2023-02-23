@@ -20,6 +20,7 @@ export async function register(profile) {
     console.log(result);
 
     alert("You are now registered");
+    window.location.replace("/login.html");
 
     // return result;
   } catch (error) {

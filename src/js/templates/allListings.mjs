@@ -3,6 +3,12 @@ export function createAllListingsHTML(listings) {
 
   //   console.log(listings);
 
+  // showing error message if there is no listings
+
+  if (listings.length === 0) {
+    return (listingsContainer.innerHTML = "No item found");
+  }
+
   listingsContainer.innerHTML = "";
 
   listings.forEach(function (listing) {

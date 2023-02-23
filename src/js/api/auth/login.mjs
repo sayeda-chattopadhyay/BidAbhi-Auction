@@ -1,9 +1,13 @@
 import { loginURL } from "../constants.mjs";
 import * as storage from "../../storage/index.mjs";
+import { displayError } from "../../ui/displayErrorMessage.mjs";
+
 const method = "post";
 
 export async function login(profile) {
   try {
+    const errorMessage = document.getElementById("errorMessage");
+    console.log(errorMessage);
     const url = loginURL;
 
     const userToLoginObject = {
@@ -15,12 +19,6 @@ export async function login(profile) {
     };
 
     const response = await fetch(url, userToLoginObject);
-    console.log(response);
-
-    // const result = await response.json();
-    // console.log(result);
-
-    // localStorage.setItem("token", result.accessToken);
 
     if (response.ok) {
       const { accessToken, ...profileDetails } = await response.json(); //  destructuring(for storing profile and access token separately)
@@ -36,5 +34,6 @@ export async function login(profile) {
     }
   } catch (error) {
     console.log(error);
+    displayError("errorMessage", error);
   }
 }

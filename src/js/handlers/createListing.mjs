@@ -1,5 +1,5 @@
 import { createListing } from "../api/listings/createListing.mjs";
-import { displayAllListings } from "../../js/ui/displayAllListings.mjs";
+import { displayAllListings } from "../templates/listings/displayAllListings.mjs";
 
 export function setCreateListingListener() {
   const form = document.querySelector("#createListing");
@@ -32,7 +32,8 @@ export function setCreateListingListener() {
         // Deiplay all listings
 
         displayAllListings();
-        alert("Your listing is created");
+
+        alert("Your item has been added");
         window.location.replace("/profile.html");
       } catch (error) {
         console.log(error);

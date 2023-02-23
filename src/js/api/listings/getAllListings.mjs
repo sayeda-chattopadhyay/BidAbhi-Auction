@@ -25,8 +25,7 @@ export async function getAllListings() {
     return await response.json();
   }
 
-  // const json = await response.json();
-  // console.log(json);
+  throw new Error("Fetching listing failed");
 }
 
 // note- need to do try and catch block

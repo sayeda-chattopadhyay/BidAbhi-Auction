@@ -1,7 +1,11 @@
 import { login } from "../api/auth/login.mjs";
 
+// import { displayError } from "../ui/displayErrorMessage.mjs";
+
 export function setLoginFormListener() {
   const form = document.querySelector("#loginForm");
+  // const errorMessage = document.getElementById("errorMessage");
+
 
   if (form) {
     form.addEventListener("submit", async (event) => {
@@ -17,6 +21,7 @@ export function setLoginFormListener() {
         // window.location.replace("/index.html");
       } catch (error) {
         console.log("error:", error);
+        // displayError("errorMessage", error);
       }
     });
   }
