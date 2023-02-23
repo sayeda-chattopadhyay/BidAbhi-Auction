@@ -42,7 +42,7 @@ export function createSingleProfileHTML(profile) {
           </div>
           <div class="d-f flex-column">
             <p class="fw-bold" id="userFollowes">Wins</p>
-            <p>${profile.wins}</p>
+            <p></p>
           </div>
           <div class="d-f flex-column">
             <p class="fw-bold" id="userFollowing">Bids</p>
