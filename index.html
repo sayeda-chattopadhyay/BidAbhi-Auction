@@ -16,75 +16,87 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/dist/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
-
-    <script
-      src="/src/js/ui/displayAllListings.mjs"
-      defer
-      type="module"
-    ></script>
-    <script
-      src="/src/js/handlers/searchListing.mjs"
-      defer
-      type="module"
-    ></script>
   </head>
   <body>
     <!-- nav bar -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
-      <div class="container-fluid text-center">
-        <a href="/index.html" class="navbar-brand"
-          ><img src="/images/Logo.png" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="/login.html">Login</a>
-            </li>
-            <li class="nav-item fs-5">
-              <button class="nav-link border border-0" href="" id="logOut">
-                Log out
-              </button>
-            </li>
-          </ul>
-          <span class="navbar-text ms-4">
-            <a
-              href="/signup.html"
-              class="text-decoration-none text-light btn btn-primary ml-5"
-            >
-              <strong>Sign up</strong></a
-            >
-          </span>
-          <span class="navbar-text ms-4">
-            <a href="/profile.html">
-              <img src="/images/Rectangle 10.jpg" class="rounded-circle ml-5"
-              width=50" height="50" >
-            </a>
-          </span>
+    <nav class="navbar sticky-top navbar-expand-lg bg-info">
+      <div
+        class="container border border-primary d-flex justify-content-evenly align-items-center"
+      >
+        <div class="col">
+          <a href="/index.html" class="navbar-brand"
+            ><img src="/images/Logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse ms-auto" id="navbarText">
+          <div class="col">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-5 active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="">Listings</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item" id="loginBtn">
+                <a class="nav-link fs-5" href="/login.html">Login</a>
+              </li>
+              <li class="nav-item" id="signBtn">
+                <a
+                  href="/signup.html"
+                  class="text-decoration-none text-light btn btn-primary ml-5"
+                >
+                  <strong>Sign up</strong></a
+                >
+              </li>
+              <!-- ptofile  -->
+              <li class="nav-item" id="profileThumpnail">
+                <a href="/profile.html">
+                  <img
+                    src="/images/Rectangle 10.jpg"
+                    class="rounded-circle ml-5"
+                    width="50"
+                    height="50"
+                    alt="blank image holder"
+                  />
+                </a>
+              </li>
+              <!-- logout -->
+              <li class="nav-item logout" id="logOut">
+                <button class="nav-link">Log out</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
+    <!-- nav bar end -->
     <!-- hero section -->
     <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div
+        class="row flex-lg-row-reverse align-items-center g-5 py-5 border border-primary"
+      >
         <div class="col-10 col-sm-8 col-lg-6">
           <img
             src="/images/hammer-719068_1920.jpg"
