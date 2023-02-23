@@ -2,6 +2,9 @@ import { searchListingUrl } from "../constants.mjs";
 
 import { load } from "../../storage/index.mjs";
 
+
+// get all posts that matching with the tag
+
 export async function searchListing(tag) {
   const url = `${searchListingUrl}${tag}`;
   console.log(url);
@@ -21,3 +24,5 @@ export async function searchListing(tag) {
 
   throw new Error("searching listing failed");
 }
+
+
