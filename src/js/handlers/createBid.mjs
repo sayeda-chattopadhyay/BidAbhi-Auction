@@ -24,7 +24,7 @@ export async function setCreateBidListener() {
   }
 }
 
-setCreateBidListener();
+// setCreateBidListener();
 
 // please log in to place you bid
 
