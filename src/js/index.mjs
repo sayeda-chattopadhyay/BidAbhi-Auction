@@ -38,6 +38,7 @@ function router() {
       handler.setCreateListingListener();
       handler.userLoggedIn();
       handler.setSearchListingListener();
+      handler.setClearSearch();
 
       break;
     // listings.getAllListings();

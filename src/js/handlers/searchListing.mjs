@@ -1,5 +1,9 @@
 import * as listings from "../templates/listings/index.mjs";
 
+import {displayAllListings} from "../templates/listings/displayAllListings.mjs";
+
+
+
 export function setSearchListingListener() {
   const form = document.querySelector("form#searchListing");
 
@@ -17,3 +21,27 @@ export function setSearchListingListener() {
     });
   }
 }
+
+
+// clear Search
+
+export function setClearSearch(){
+  const clearSearchButton = document.querySelector("#clear-search")
+  console.log(clearSearchButton)
+
+  const searchInput = document.querySelector("#searchInput")
+ 
+  console.log(searchInput)
+
+  if(clearSearchButton){
+    clearSearchButton.addEventListener("click",()=>{
+      console.log("input value:", searchInput.value)
+      searchInput.value="";
+      displayAllListings();
+
+    })
+  }
+
+}
+
+
