@@ -38,7 +38,7 @@ export function createSingleListingHTML(listing) {
     minute: "2-digit",
   });
 
-  singleListingContainer.innerHTML += ` <div class="row align-items-center g-5 py-5 bg-info">
+  singleListingContainer.innerHTML += ` <div class="row align-items-center g-5 py-5">
                                                 <div class="col-10 col-sm-8 col-lg-6">
                                                     <img
                                                         src="${imgMedia}"
