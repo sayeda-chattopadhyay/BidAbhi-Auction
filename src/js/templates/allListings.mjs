@@ -12,9 +12,9 @@ export function createAllListingsHTML(listings) {
   listingsContainer.innerHTML = "";
 
   listings.forEach(function (listing) {
-    // console.log(listing);
+    console.log("All listing:" ,listing);
 
-    const { id, title, description, media, created, endsAt, _count, tags } =
+    const { id, title, description, media, created, endsAt, _count, tags,seller } =
       listing; // destructuring
 
     let imgMedia = media;
@@ -60,7 +60,7 @@ export function createAllListingsHTML(listings) {
                                                 <p class="card-text">
                                                 <strong>Tags: </strong>${tags}
                                                 </p>
-                                                <p class="card-text"><strong>Owner: </strong>Owner name</p>
+                                                <p class="card-text"><strong>Owner: </strong>${seller.name}</p>
                                             </div>
                                             <div class="card-footer bg-light border-0 pt-0 mt-0">
                                                 <hr />

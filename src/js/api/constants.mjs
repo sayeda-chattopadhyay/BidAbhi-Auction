@@ -41,3 +41,11 @@ export const listingSortsURL = `${listingsBaseURL}${activeListing}`;
 
 export const singlelistingUrl = `${listingsBaseURL}${"/"}`;
 // console.log(singlelistingUrl);
+
+
+//const endsAt_url = https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18;
+
+export const endingSoonQs ="&sort=endsAt&sortOrder=asc"
+
+export const endingSoonUrl = `${activeListingURL}${endingSoonQs}`
+console.log("endingSoonUrl :", endingSoonUrl)

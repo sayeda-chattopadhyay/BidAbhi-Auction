@@ -1,5 +1,8 @@
-import { activeListingURL } from "../constants.mjs";
+//import { activeListingURL } from "../constants.mjs";
 // console.log(activeListingURL);
+
+import { endingSoonUrl } from "../constants.mjs";
+
 
 import { load } from "../../storage/index.mjs";
 
@@ -9,8 +12,11 @@ import { load } from "../../storage/index.mjs";
  */
 
 export async function getAllListings() {
-  const url = activeListingURL;
-  // console.log(url);
+  const sellerQs = "&_seller=true&_bids=true"
+  const limitQs ="&limit=15"
+  //const url = activeListingURL; 
+  const url = `${endingSoonUrl}${sellerQs}${limitQs}`;
+  console.log(url);
 
   const token = load("token");
 
