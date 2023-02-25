@@ -14,7 +14,7 @@ export function createAllListingsHTML(listings) {
   listings.forEach(function (listing) {
     console.log("All listing:" ,listing);
 
-    const { id, title, description, media, created, endsAt, _count, tags} =
+    const { id, title, description, media, created, endsAt, _count, tags,seller} =
       listing; // destructuring
 
     let imgMedia = media;
@@ -23,7 +23,7 @@ export function createAllListingsHTML(listings) {
       imgMedia = ["/images/no-image-2.jpg"];
     }
 
-    // let sellerName = seller.name
+   let sellerName = seller.name
 
     const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
       month: "short",
@@ -62,7 +62,7 @@ export function createAllListingsHTML(listings) {
                                                 <p class="card-text">
                                                 <strong>Tags: </strong>${tags}
                                                 </p>
-                                                <p class="card-text"><strong>Seller:</strong></p>
+                                                <p class="card-text"><strong>Seller:</strong>${sellerName}</p>
                                             </div>
                                             <div class="card-footer bg-light border-0 pt-0 mt-0">
                                                 <hr />
