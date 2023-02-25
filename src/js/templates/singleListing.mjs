@@ -1,18 +1,41 @@
+
+// import {load} from "../storage/index.mjs";
+// const profile = load("profile");
+
+// const ProfileName = profile.name;
+
+// console.log("ProfileName:",ProfileName);
+
+
 export function createSingleListingHTML(listing) {
+
   const singleListingContainer = document.getElementById(
     "singleListingContainer"
   );
+
+  const placeYourBidSection = document.querySelector("#place-your-bid-section")
+
+  console.log("placeYourBidSection",placeYourBidSection)
+
+  placeYourBidSection.style.display ="block"
+
+
 
   const bidHistory = document.getElementById("bidHistory");
 
   const { title, description, media, bids, created, endsAt, seller, _count } =
     listing;
 
+    const sellerName = seller.name
+    console.log("SellerName:",sellerName);
+
+
   let imgMedia = media;
 
   if (media.length === 0) {
     imgMedia = ["/images/no-image-2.jpg"];
   }
+
 
   const bidsHistory = bids;
 
@@ -38,34 +61,39 @@ export function createSingleListingHTML(listing) {
     minute: "2-digit",
   });
 
-  singleListingContainer.innerHTML += ` <div class="row align-items-center g-5 py-5">
-                                                <div class="col-10 col-sm-8 col-lg-6">
-                                                    <img
-                                                        src="${imgMedia}"
-                                                        class="d-block mx-lg-auto img-fluid"
-                                                        alt="${title}" 
-                                                        style="height: 22rem; width: 50rem; object-fit: cover"
-                                                        loading="lazy"
-                                                    />
-                                                </div>
-                                                <div class="col-12 col-md-6 d-flex flex-column">
-                                                <div class="my-3">
-                                                    <p class="h1">${title}</p>
-                                                    <p class="lh-lg fs-6" id="item-Description">
-                                                    <strong>Description:
-                                                    ${description}
-                                                    </strong>
-                                                    </p>
-                                                </div>
-                                                <hr>
-                                                <p class="fs-5"><strong>Seller : </strong>${seller.name}</p>
-                                                <p class="fs-5"><strong>Created : </strong>${formattedCreatedDate}<span class="small text-muted" >, ${formattedCreatedTime}</span ></p>
-                                                <p class="fs-5"><strong>Ends at : </strong>${formattedEndDate}<span class="small text-muted" >, ${formattedEndTime}</span ></p>
-                                                <p class="fs-5"><strong>Total Bids : </strong>${_count.bids}<span class="small text-muted" ></span ></p>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>`;
+  singleListingContainer.innerHTML += `<div class="row align-items-center g-5 py-5">
+  <div class="col-10 col-sm-8 col-lg-6">
+      <img
+          src="${imgMedia}"
+          class="d-block mx-lg-auto img-fluid"
+          alt="${title}" 
+          style="height: 24rem; width: 50rem; object-fit: cover"
+          loading="lazy"
+      />
+  </div>
+  <div class="col-12 col-md-6 d-flex flex-column">
+        <div class="my-3">
+            <p class="h1">${title}</p>
+            <p class="lh-lg fs-6" id="item-Description">
+            <strong>Description:
+            ${description}
+            </strong>
+            </p>
+        </div>
+          <hr>
+        <div>
+          <p class="fs-5"><strong>Seller : </strong>${sellerName}</p>
+          <p class="fs-5"><strong>Created : </strong>${formattedCreatedDate}<span class="small text-muted" >, ${formattedCreatedTime}</span ></p>
+          <p class="fs-5"><strong>Ends at : </strong>${formattedEndDate}<span class="small text-muted" >, ${formattedEndTime}</span ></p>
+          <p class="fs-5"><strong>Total Bids : </strong>${_count.bids}<span class="small text-muted" ></span ></p>
+        </div>  
+        <hr>
+        <div>
+            <button id ="edit-btn">Edit</button>
+            <button id ="delete-btn">Delete</button>
+         </div>  
+    </div>
+</div> `;
 
   bidsHistory.forEach(function (bid) {
     const { amount, bidderName, created } = bid;
@@ -101,3 +129,9 @@ export function createSingleListingHTML(listing) {
                               </li> `;
   });
 }
+
+
+
+
+
+

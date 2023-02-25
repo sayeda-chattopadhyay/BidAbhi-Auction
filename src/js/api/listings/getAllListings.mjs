@@ -1,5 +1,5 @@
 //import { activeListingURL } from "../constants.mjs";
-// console.log(activeListingURL);
+//console.log(activeListingURL);
 
 import { endingSoonUrl } from "../constants.mjs";
 
@@ -29,6 +29,8 @@ export async function getAllListings() {
 
   if (response.ok) {
     return await response.json();
+    // const results = await response.json();
+    // console.log("results", results)
   }
 
   throw new Error("Fetching listing failed");
