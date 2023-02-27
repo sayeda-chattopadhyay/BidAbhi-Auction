@@ -1,7 +1,7 @@
 import * as api from "../../api/listings/index.mjs";
 import * as ui from "../../ui/index.mjs";
 
-import { createAllListingsHTML } from "../../templates/allListings.mjs";
+import { createAllListingsHTML } from "../../renderHtml/Listing/allListings.mjs";
 
 export async function displaySearchedListings(tag) {
   try {

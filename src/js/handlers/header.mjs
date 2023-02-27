@@ -27,3 +27,21 @@ export function userLoggedIn() {
     logOut.style.display = "none";
   }
 }
+
+
+// export function profileThumbnail(profile){
+
+//const const profileThumbnail = document.getElementById("profileThumbnail"); = document.getElementById("profileThumbnail");
+// profileThumbnail.innerHtml =""
+// profileThumbnail.innerHtml =` <a href="/profile.html">
+              //     <img
+              //     src=""
+              //     class="rounded-circle ml-5"
+              //     width="50"
+              //     height="50"
+              //     alt="blank image holder"
+              //   />
+              // </a>`
+
+  
+//}
