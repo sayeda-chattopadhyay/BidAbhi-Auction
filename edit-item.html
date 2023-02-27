@@ -26,6 +26,75 @@
     ></script> -->
   </head>
   <body class="px-3">
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid bg-warning d-flex flex-sm-row justify-content-evenly" >
+        <div>
+          <a href="/index.html" class="navbar-brand"
+          ><img src="/images/Logo.png" alt="logo"
+        /></a>   
+        </div>
+          <!-- <a href="/index.html" class="navbar-brand"
+            ><img src="/images/Logo.png" alt="logo"
+          /></a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Ul -->
+        <div class="collapse navbar-collapse " id="navbarText"> 
+           <!--center of nav  -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-5 active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="/listing.html">Listings</a>
+              </li>
+              <li class="nav-item" id="profileThumbnail">
+                <a href="/profile.html" class="nav-link fs-5">
+                  <!-- <img
+                    src=""
+                    class="rounded-circle ml-5"
+                    width="50"
+                    height="50"
+                    alt="blank image holder"
+                  /> -->
+                  Profile
+                </a>
+               
+              </li>
+            </ul>
+             <!--right side of nav  -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- Log in -->
+              <li class="nav-item" id="loginBtn">
+                <a class="nav-link fs-5" href="/login.html">Login</a>
+              </li>
+                <!-- Sign Up -->
+              <li class="nav-item" id="signBtn">
+                <a
+                  href="/signup.html"
+                  class="text-decoration-none text-light btn btn-primary ml-5"
+                >
+                  <strong>Sign up</strong></a
+                >
+              </li>
+              <!-- logout -->
+              <li class="nav-item logout" id="logOut">
+                <button class="nav-link fs-5 btn btn-link" >Log out</button>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav -->
     <nav class="navbar sticky-top navbar-expand-lg bg-info">
         <div
           class="container border border-primary d-flex justify-content-evenly align-items-center"

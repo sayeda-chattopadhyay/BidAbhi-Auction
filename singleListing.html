@@ -37,15 +37,16 @@
   ></script>
   </head>
   <body class="px-3">
-    <!-- nav bar -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-info">
-      <div
-        class="container border border-primary d-flex justify-content-evenly align-items-center"
-      >
-        <div class="col">
+     <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid bg-warning d-flex flex-sm-row justify-content-evenly" >
+        <div>
           <a href="/index.html" class="navbar-brand"
+          ><img src="/images/Logo.png" alt="logo"
+        /></a>   
+        </div>
+          <!-- <a href="/index.html" class="navbar-brand"
             ><img src="/images/Logo.png" alt="logo"
-          /></a>
+          /></a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -57,24 +58,37 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-
-        <div class="collapse navbar-collapse ms-auto" id="navbarText">
-          <div class="col">
+          <!-- Ul -->
+        <div class="collapse navbar-collapse " id="navbarText"> 
+           <!--center of nav  -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fs-5" href="/index.html">Home</a>
+                <a class="nav-link fs-5 active" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="">Listings</a>
+                <a class="nav-link fs-5" href="/listing.html">Listings</a>
+              </li>
+              <li class="nav-item" id="profileThumbnail">
+                <a href="/profile.html" class="nav-link fs-5">
+                  <!-- <img
+                    src=""
+                    class="rounded-circle ml-5"
+                    width="50"
+                    height="50"
+                    alt="blank image holder"
+                  /> -->
+                  Profile
+                </a>
+               
               </li>
             </ul>
-          </div>
-          <div class="col">
+             <!--right side of nav  -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- Log in -->
               <li class="nav-item" id="loginBtn">
                 <a class="nav-link fs-5" href="/login.html">Login</a>
               </li>
+                <!-- Sign Up -->
               <li class="nav-item" id="signBtn">
                 <a
                   href="/signup.html"
@@ -83,19 +97,11 @@
                   <strong>Sign up</strong></a
                 >
               </li>
-              <!-- ptofile  -->
-              <li class="nav-item" id="profileThumbnail">
-                <a href="/profile.html">
-                  <img src="/images/Rectangle 10.jpg" class="rounded-circle
-                  ml-5" width="50" height="50" >
-                </a>
-              </li>
               <!-- logout -->
               <li class="nav-item logout" id="logOut">
-                <button class="nav-link">Log out</button>
+                <button class="nav-link fs-5 btn btn-link" >Log out</button>
               </li>
             </ul>
-          </div>
         </div>
       </div>
     </nav>
