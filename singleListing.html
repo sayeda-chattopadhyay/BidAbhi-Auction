@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/dist/css/styles.css" />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -24,18 +25,18 @@
     <!-- <script src="/src/js/handlers/header.mjs" defer type="module"></script> -->
     <script src="/src/js/index.mjs" defer type="module"></script>
     <!-- <script src="/src/js/api/listings/index.mjs" defer type="module"></script> -->
-    <script
+    <!-- <script
       src="/src/js/api/listings/getSingleListing.mjs"
       defer
       type="module"
-    ></script>
-    <!-- <script
-    src="/src/js/templates/profile/getSingleListingByProfile.mjs"
+    ></script> -->
+    <script
+    src="/src/js/api/listings/getSingleListing.mjs"
     defer
     type="module"
-  ></script> -->
+  ></script>
   </head>
-  <body>
+  <body class="px-3">
     <!-- nav bar -->
     <nav class="navbar sticky-top navbar-expand-lg bg-info">
       <div
@@ -100,15 +101,20 @@
     </nav>
     <!-- hero section -->
     <div
-      class="container-fluid col-xxl-8 px-4 py-5"
+      class="container-fluid col-xxl-8 px-4 py-5 border border-primary"
       id="singleListingContainer" >
   </div>
+  <!-- <div class="container bg-info" id="edit-delete-bid-btn-container" >
+  
+
+  </div> -->
     <!-- place your bid -->
     <div
-      class="container my-5 p-3 col-lg-6 m-auto bg-light rounded-3"
+      class="container my-5 p-3 col-lg-6 m-auto bg-light rounded-3  border border-primary"
       id="place-your-bid-section"
     >
-      <div class="row my-5">
+    <!-- hid -->
+      <div class="row my-5 border border-info" id="bid-section">
         <div class="col">
           <h2 class="text-black text-end">Place your bid</h2>
         </div>
@@ -138,14 +144,24 @@
               <p class="mt-3" id="noCredit-message">
                 You do not have enough credits.
               </p>
-              <p class="mt-3 bid-message" id="bid-message">
+              <!-- <p class="mt-3 bid-message" id="bid-message">
                 If you want to bid please log in or create an account.
-              </p>
+              </p> -->
             </form>
           </div>
         </div>
       </div>
+     
+       <!-- hid -->
+       <div>
+        <p class="mt-3 bid-message" id="bid-message">
+          If you want to bid please log in or create an account.
+        </p>
+      </div>
+
     </div>
+  
+   
     <!-- bid end -->
     <hr />
     <!-- Bid History List -->
@@ -158,7 +174,7 @@
       </div>
     </div>
     <!-- footer -->
-    <div class="container-fluid bg-footer text-white mx-3">
+    <div class="container-fluid bg-footer text-white px-3">
       <footer class="row row-cols-1 row-cols-sm-2 py-5 my-5 border-top">
         <div class="col mb-3">
           <div class="">
