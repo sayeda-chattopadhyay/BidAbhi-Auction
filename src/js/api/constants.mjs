@@ -48,4 +48,4 @@ export const singlelistingUrl = `${listingsBaseURL}${"/"}`;
 export const endingSoonQs ="&sort=endsAt&sortOrder=asc"
 
 export const endingSoonUrl = `${activeListingURL}${endingSoonQs}`
-console.log("endingSoonUrl :", endingSoonUrl)
+// console.log("endingSoonUrl :", endingSoonUrl)
