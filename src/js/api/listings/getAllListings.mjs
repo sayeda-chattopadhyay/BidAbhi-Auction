@@ -16,7 +16,7 @@ export async function getAllListings() {
   const limitQs ="&limit=15"
   //const url = activeListingURL; 
   const url = `${endingSoonUrl}${sellerQs}${limitQs}`;
-  console.log(url);
+  console.log("getAllListings url :", url);
 
   const token = load("token");
 

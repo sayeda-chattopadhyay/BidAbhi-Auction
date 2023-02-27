@@ -1,5 +1,5 @@
 import * as api from "../../api/listings/index.mjs";
-import * as templates from "../allListings.mjs";
+import * as templates from "../../renderHtml/Listing/index.mjs";
 import * as ui from "../../ui/index.mjs";
 
 export async function displayAllListings() {

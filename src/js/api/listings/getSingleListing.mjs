@@ -1,6 +1,7 @@
 import { singlelistingUrl } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
-import { createSingleListingHTML } from "../../templates/singleListing.mjs";
+//import { displaySingleListing } from "../../templates/listings/index.mjs";
+import{createSingleListingHTML} from "../../renderHtml/Listing/singleListing.mjs"
 
 /**
  * getPost(id) function fetches post from api server by its unique id. Retieves the data in object and passes to
@@ -46,11 +47,17 @@ export async function getSingleListing(id) {
 
   const json = await response.json();
   console.log(json);
+  //return json;
 
-  createSingleListingHTML(json);
+  // displaySingleListing(json)
+  createSingleListingHTML(json)
 }
 
 getSingleListing(id);
 
+
+// const displaySingleListing = await getSingleListing(id)
+
+// createSingleListingHTML(displaySingleListing);
 
 //Note- try and catch

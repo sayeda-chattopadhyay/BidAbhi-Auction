@@ -1,22 +1,27 @@
-// When profile users view their own single listing , will not able to see bid section.
-// They will see edit and delete button instead.
-
-// import {load} from "../../storage/index.mjs";
-// import {createSingleListingHTML} from "../../templates/singleListing.mjs"
 
 
+  export function renderBidButtonOrEditButtons(username, bidName,id) {
 
+     const placeYourBidSection = document.querySelector("#place-your-bid-section")
 
+     console.log("placeYourBidSection:", placeYourBidSection)
 
-// export function displaySingleListingByProfile(){
-//     const profile = load("profile")
-//     console.log("profileName:", profile)  
+     if(!username) {
 
-//      const seller = listing.seller;
-//      console.log("Seller Name:", seller)
+    return "<div>You must be loggd in to bid</div>"
+   } 
 
-// }
+    
+    if(username === bidName) {
+     
+      return `
+      <a href="/edit-item.html?id=${id}" class="btn btn-primary bg-success">Edit Post</a> 
+      <button data-delete-id=${id} class="delete-post border border-0 bg-info">Delete Post</button>`
 
-// // check only
-// displaySingleListingByProfile()
+    }
+  
+     return "<div></div>"; 
 
+  }
+
+  
