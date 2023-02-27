@@ -73,16 +73,15 @@ export function createSingleListingHTML(listing) {
   <div class="col-10 col-sm-8 col-lg-6">
       <img
           src="${imgMedia}"
-          class="d-block mx-lg-auto img-fluid"
+          class="d-block mx-lg-auto img-fluid c-image"
           alt="${title}" 
-          style="height: 24rem; width: 50rem; object-fit: cover"
           loading="lazy"
       />
   </div>
   <div class="col-12 col-md-6 d-flex flex-column">
         <div class="my-3">
             <p class="h1">${title}</p>
-            <p class="lh-lg fs-6" id="item-Description">
+            <p class="lh-lg fs-6 c-description" id="item-Description">
             <strong>Description:
             ${description}
             </strong>

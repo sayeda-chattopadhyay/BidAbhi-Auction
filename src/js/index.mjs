@@ -63,6 +63,13 @@ function router() {
         handler.userLoggedIn();
         handler.setEditListingListener();
         break;
+
+       case "/listing.html":
+        handler.userLoggedIn();
+        handler.setLogoutBUttonListener();
+        templates.displayActiveListings();
+        break;
+
   }
 }
 

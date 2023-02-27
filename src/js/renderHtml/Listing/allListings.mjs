@@ -50,13 +50,12 @@ export function createAllListingsHTML(listings) {
                                             <a href="/singleListing.html?id=${id}"
                                                 ><img
                                                 src="${imgMedia}"
-                                                class="card-img-top"
-                                                style="height: 22rem; object-fit: cover"
+                                                class="card-img-top c-image" 
                                                 alt="${title}"
                                             /></a>
                                             <div class="card-body bg-light">
                                                 <h3 class="card-title pb-0">${title}</h3>
-                                                <p class="card-text">
+                                                <p class="card-text c-description">
                                                 <strong>Description: </strong>${description}
                                                 </p>
                                                 <p class="card-text">
@@ -77,7 +76,7 @@ export function createAllListingsHTML(listings) {
                                                     >, ${formattedEndTime}</span
                                                 >
                                                 </p>
-                                                 <a href="/singleListing.html?id=${id}"class="btn btn-primary" style="width: 50%">
+                                                 <a href="/singleListing.html?id=${id}"class="btn btn-primary c-link">
                                                             <strong>View Item</strong>
                                                         </a>
                                             </div>
