@@ -72,3 +72,20 @@
   background-color: #fbcd25;
   background-color: #d3dae1;
  }
+
+
+/* customised image size on card */
+
+ .c-image{
+  height: 22rem; 
+  object-fit: cover;
+
+ }
+ 
+ .c-description{
+  min-height: 100px;
+ }
+
+ .c-link{
+  width: 50%;
+ }
