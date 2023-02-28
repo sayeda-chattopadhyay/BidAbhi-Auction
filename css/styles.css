@@ -6,7 +6,6 @@
 
 
 
-
 .loader {
   border: 16px solid #1c1652;
   border-top: 16px solid var(--primary-colour);
@@ -89,3 +88,4 @@
  .c-link{
   width: 50%;
  }
+
