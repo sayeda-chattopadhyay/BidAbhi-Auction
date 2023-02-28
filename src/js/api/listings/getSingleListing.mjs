@@ -3,19 +3,21 @@ import { load } from "../../storage/index.mjs";
 //import { displaySingleListing } from "../../templates/listings/index.mjs";
 import{createSingleListingHTML} from "../../renderHtml/Listing/singleListing.mjs"
 
+
+
 /**
  * getPost(id) function fetches post from api server by its unique id. Retieves the data in object and passes to
 
  */
 
 const querryString = document.location.search;
-console.log(querryString);
+
 const params = new URLSearchParams(querryString);
-console.log(params);
+
 const id = params.get("id");
 // const name = params.get("name");
 // console.log(name);
-console.log(id);
+
 
 export async function getSingleListing(id) {
   if (!id) {
@@ -56,8 +58,5 @@ export async function getSingleListing(id) {
 getSingleListing(id);
 
 
-// const displaySingleListing = await getSingleListing(id)
 
-// createSingleListingHTML(displaySingleListing);
-
-//Note- try and catch
+//Note- add try and catch

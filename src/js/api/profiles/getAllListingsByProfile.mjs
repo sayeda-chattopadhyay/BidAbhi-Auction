@@ -1,7 +1,7 @@
 import { profileURL } from "../constants.mjs";
 
 import { load } from "../../storage/index.mjs";
-import { createAllProfileListingsHTML } from "../../templates/index.mjs";
+import { createAllProfileListingsHTML } from "../../renderHtml/Profile/index.mjs";
 
 console.log(profileURL);
 

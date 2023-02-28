@@ -1,6 +1,6 @@
 import { profileURL } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
-import { createSingleProfileHTML } from "../../templates/index.mjs";
+import { createSingleProfileHTML } from "../../renderHtml/Profile/index.mjs";
 
 const token = load("token");
 

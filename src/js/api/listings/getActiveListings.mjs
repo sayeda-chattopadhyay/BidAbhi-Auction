@@ -3,7 +3,7 @@ console.log(activeListingURL);
 import { load } from "../../storage/index.mjs";
 
 /**
- * getAllListings() function fetching all the listings from server that users have created.
+ * getActiveListings() function fetching all the active listings from server that users have created.
 
  */
 

@@ -1,6 +1,6 @@
 import { profileURL } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
-import { createAllBidsByProfileHTML } from "../../templates/index.mjs";
+import { createAllBidsByProfileHTML } from "../../renderHtml/Profile/index.mjs";
 
 const token = load("token");
 console.log(token);
