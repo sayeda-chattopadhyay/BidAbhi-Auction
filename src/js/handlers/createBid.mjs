@@ -75,6 +75,7 @@ export async function setCreateBidListener() {
   if (!token){
      bidButton.disabled = true;
     bidMessage.style.display="block";
+
     // bidHistorySection.style.display="none";
     // bidSection.style.display= "none"
   }
@@ -103,8 +104,3 @@ export async function setCreateBidListener() {
 
 
 
-// else if(profileName === sellerName){
-//   bidSection.style.display ="none"
-//   editBtn.style.display ="block"
-//   deletBtn.style.display ="block"
-// }

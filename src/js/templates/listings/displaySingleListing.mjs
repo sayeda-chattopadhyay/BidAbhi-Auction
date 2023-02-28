@@ -1,20 +1,20 @@
-// import * as api from "../../api/listings/index.mjs";
-// import * as templates from "../../renderHtml/Listing/index.mjs";
-// //import * as ui from "../../ui/index.mjs";
+// import * as api from "../../api/listings/index.mjs"; // this is for api fetch call
+// import * as templates from "../../renderHtml/Listing/index.mjs"; // This is for rendering html
+//import * as ui from "../../ui/index.mjs"; // showing Loading and error message
 
 
-// //import { createSingleListingHTML } from "../../renderHtml/Listing/index.mjs";
 
 // export async function displaySingleListing(id) {
 //   try {
-//     //ui.displayLoading("listingsContainer"); //  Loading indication to the html listing container
+//     //ui.displayLoading("singleListingContainer"); //  Loading indication to the html listing container
 //     const singleListing = await api.getSingleListing(id); // getting all listings from api
 //     templates.createSingleListingHTML(singleListing); // passing these listings to HTML page
 //   } catch (error) {
 //     console.log(error);
-//    //ui.displayError("listingsContainer", error); // displays error message
+//    //ui.displayError("singleListingContainer", error); // displays error message
 //   }
 // }
+
 
 
 

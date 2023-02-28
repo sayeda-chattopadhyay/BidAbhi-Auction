@@ -32,10 +32,7 @@ export function createSingleListingHTML(listing) {
   const { id,title, description, media, bids, created, endsAt, seller, _count } =
     listing;
 
-    const sellerName = seller.name
-
-    console.log("SellerName:",sellerName);
-    console.log("ProfileName:",profileName);
+    const sellerName = seller.name;
 
 
   let imgMedia = media;
@@ -46,8 +43,9 @@ export function createSingleListingHTML(listing) {
 
 
   const bidsHistory = bids;
+  console.log("bidsHistory Id:", bidsHistory)
 
-  console.log(bidsHistory);
+ 
 
   const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
     month: "short",
@@ -69,16 +67,16 @@ export function createSingleListingHTML(listing) {
     minute: "2-digit",
   });
 
-  singleListingContainer.innerHTML += `<div class="row align-items-center g-5 py-5">
-  <div class="col-10 col-sm-8 col-lg-6">
+  singleListingContainer.innerHTML += `<div class="row align-items-center justify-content-cente g-5 py-5">
+  <div class="col-12 col-md-5 col-lg-6">
       <img
           src="${imgMedia}"
-          class="d-block mx-lg-auto img-fluid c-image"
+          class="d-block mx-lg-auto c-image"
           alt="${title}" 
           loading="lazy"
       />
   </div>
-  <div class="col-12 col-md-6 d-flex flex-column">
+  <div class="col-12 col-md-7 col-md-6 col-lg-6 d-flex flex-column">
         <div class="my-3">
             <p class="h1">${title}</p>
             <p class="lh-lg fs-6 c-description" id="item-Description">
@@ -100,16 +98,6 @@ export function createSingleListingHTML(listing) {
         </div>  
     </div>
 </div> `;
-
-
-
-
-
-
-
-
-
-
 
 
 
