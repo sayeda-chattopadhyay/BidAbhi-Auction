@@ -2,15 +2,6 @@ import * as handler from "./handlers/index.mjs";
 
 import * as templates from "./templates/listings/index.mjs";
 
-//import * as listings from "./api/listings/getSingleListing.mjs";
-
-// import{userLoggedIn} from"./handlers/header.mjs"
-
-// import * as ui from "./ui/index.mjs";
-
-// import * as api from "./api/profiles/index.mjs";
-
-
 
 function router() {
   const path = location.pathname;
@@ -32,7 +23,6 @@ function router() {
       // api.getAllListingsByProfile();
       // api.getProfileDetails();
       break;
-    // ui.displaySingleProfile();
     case "/":
     case "/index.html":
       templates.displayAllListings();
@@ -41,14 +31,15 @@ function router() {
       handler.userLoggedIn();
       handler.setSearchListingListener();
       handler.setClearSearch();
-
+      
       break;
-    // listings.getAllListings();
+   
 
     case "/singleListing.html":
       handler.setLogoutBUttonListener();
       handler.setCreateBidListener();
       handler.userLoggedIn();
+      handler.setDeleteButtonListener();
       // listings.getSingleListing();
       break;
 
@@ -61,6 +52,7 @@ function router() {
 
       case "/edit-item.html":
         handler.userLoggedIn();
+        handler.setLogoutBUttonListener();
         handler.setEditListingListener();
         break;
 
@@ -75,4 +67,3 @@ function router() {
 
 router();
 
-//setUpdateListingListener()
