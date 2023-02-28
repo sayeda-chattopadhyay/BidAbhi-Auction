@@ -22,8 +22,7 @@ export async function setEditListingListener() {
         } catch (error) {
           console.log("error:", error);
         }
-
-        
+ 
       });
     }
   }
