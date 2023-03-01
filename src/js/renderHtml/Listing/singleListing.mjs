@@ -94,7 +94,7 @@ export function createSingleListingHTML(listing) {
           <p class="fs-5"><strong>Total Bids : </strong>${_count.bids}<span class="small text-muted" ></span ></p>
         </div>  
         <hr>
-        <div class="">
+        <div class="my-3">
         <div>${renderBidButtonOrEditButtons(profileName,sellerName,id)}</div>  
         </div>  
     </div>
