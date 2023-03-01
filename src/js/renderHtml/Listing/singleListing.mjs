@@ -3,7 +3,7 @@
 
  import {renderBidButtonOrEditButtons} from "../../templates/profile/getSingleListingByProfile.mjs"
 
-
+import {setDeleteButtonListener} from "../../handlers/index.mjs"
 
 export function createSingleListingHTML(listing) {
 
@@ -33,6 +33,7 @@ export function createSingleListingHTML(listing) {
     listing;
 
     const sellerName = seller.name;
+    console.log("sellerName:", sellerName)
 
 
   let imgMedia = media;
@@ -114,7 +115,7 @@ export function createSingleListingHTML(listing) {
       hour: "2-digit",
       minute: "2-digit",
     });
-
+   
     bidHistory.innerHTML += ` <li class="card mb-3" style="max-width: 540px">
                                 <div class="row g-0"> 
                                     <div class="col-md-8">
@@ -135,6 +136,8 @@ export function createSingleListingHTML(listing) {
                                 </div>
                               </li> `;
   });
+  setDeleteButtonListener();
+
 }
 
 
