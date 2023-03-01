@@ -11,6 +11,8 @@
 - [Functionalities](#functionalities)
 - [Links](#links)
 - [Tools](#tools)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [Licence](#license)
 - [Developer Bio](#bio)
@@ -100,7 +102,7 @@ registered users can use their credit toto place bids
 
 </br>
 
-### Dependencies
+## Dependencies
 
 ```json
   "bootstrap": "^5.2.3"
@@ -108,7 +110,7 @@ registered users can use their credit toto place bids
 
 </br>
 
-### Dev dependencies
+## Dev dependencies
 
 ```json
   "eslint": "^8.33.0",
