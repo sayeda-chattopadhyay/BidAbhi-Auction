@@ -1,56 +1,111 @@
 # BidAbhi-Auction
 
 
+# Bidabhi auction (Semester-Project-2)
+
+![Homepage Preview](/planning_and_design/images/site_readme_image.jpg)
+
+## Table Of Content
+
+- [About](#about)
+- [Functionalities](#functionalities)
+- [Links](#links)
+- [Tools](#tools)
+- [Contributing](#contributing)
+- [Licence](#license)
+- [Developer Bio](#bio)
+- [Contact](#contact)
+
+## About
+
+Bidabhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the . Register users can set up and change their profile.
+The website is meant for users to sell their own goods as well as bid for other items listed in the website. The website is developed as part of semester-project 2 and have some specific functionalities. 
+
+## Functionalities
+
+The following functionalities are available to the users:
+- users with stud.noroff.no email may register
+- unregistered user can browse through and see different listings
+- registered users can login , logout, update their avatar and view available credit. 
+- registered users can create listings with a title, deadline date, media gallery and description
+- registered users can place bid to other listings
+- registered users can view Bids made on a Listing
+registered users can use their credit toto place bids
 
 
+## Links
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <td>URL</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Gantt Chart</th>
+      <td><a href="https://raw.githubusercontent.com/Anclagen/Semester-Project-2/main/planning_and_design/Gantt%20Chart%20Images/TeamGanttChart.jpg">Gantt Chart Image</a></td>
+    </tr>
+    <tr>
+      <th>Design Prototype</th>
+      <td><a href="https://xd.adobe.com/view/a6dadd77-9ac4-4eb6-8244-130bfa0a4ade-f389/">Desktop Prototype</a> </br>
+      <a href="https://xd.adobe.com/view/1672b6ba-0ca5-42ce-8288-6eb261c44223-4321/">Mobile Prototype</a></td>
+    </tr>
+    <tr>
+      <th>Style Guide</th>
+      <td><a href="https://xd.adobe.com/view/666988e0-4582-49ce-b57f-dae078f5507c-333a/">Style Guide</a></td>
+    </tr>
+    <tr>
+      <th>Kanban Board</th>
+      <td><a href="https://github.com/users/Anclagen/projects/2/views/6?layout=board">Project Board Link</a></td>
+    </tr>
+    <tr>
+      <th>Repository</th>
+      <td><a href="https://github.com/Anclagen/Semester-Project-2">Project Repository</a></td>
+    </tr>
+    <tr>
+      <th>Hosted Demo</th>
+      <td><a href="https://anclagen.github.io/Semester-Project-2/">Live Site</a></td>
+    </tr>
+  </tbody>
+</table>
+
+##  Tools
+
+<img src="https://skillicons.dev/icons?i=html,css,js,sass,bootstrap,github,vscode,netlify,figma"/>
+
+- HTML 5
+- CSS
+- Sass
+- Bootstrap
+- JavaScript
+- GitHub
+- Vscode
+- Netlify
+- Figma
 
 
+## Contributing
 
+Contact if you face any issues and if you want to suggest improvements and changes.
 
+## License
 
----
-### Bio
+This project is licensed under a Creative Commons license. It is open for contributions, but please credit the project if you use the code in your own projects.
+
+## Bio
 -   UX designer and a front-end developer
 -   BSc in Physical Sciences
 -   Several years experience in banking 
 
-
-I am passionate about art and craft. Hence I ventured into this field of UX design to fulfill my aspiration of designing user-centric products. Now I am studying to be a Front-end developer so that I can help give life to my interactive designs.
-
-Many years of experience in banking and service sectors taught me to take challenges and underdstand clients´/ customers´ needs, goals and pain points with empathy. My previous experiences also help me to develop solutions tailored to specific needs of the clients.
-
-I aim to create solutions which are easily accessible to users of all ages and backgrounds including those who are having physical or cognitive limitations in their life.
-
-
-- :woman_student: Currenty I am studying front end development at Noroff.
-- :seedling: I have completed UX-deign course last year.
-- :telescope:	I am looking for freelance work on web design and development.
-- :speech_balloon: I am open to collaborate.
-- :woman_technologist:	 My latest development jobs can be found here: 
 <a href="https://stellular-taffy-47ab91.netlify.app">My Portfolio</a>
-
-
-
-
-
-### Languages & Tools
-
-
-  <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank"> <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/> </a> <a href= "https://www.adobe.com/products/xd.html" target="_blank"> <img src= "https://github.com/devicons/devicon/blob/master/icons/xd/xd-plain.svg" alt="xd" width="40" height="40"/> </a> <a href= "https://www.adobe.com/no/products/photoshop.html" target="_blank"> <img src= "https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-plain.svg" alt="xd" width="40" height="40"/> </a> <a href= "https://fontawesome.com/"  target="_blank"> <img src= "https://user-images.githubusercontent.com/83353551/196003945-82a37638-8869-4590-aacd-7b70679c413b.png" alt="font awesone" width="40" height="40"/> </a> </a> <a href= "https://wordpress.org/"  target="_blank"> <img src= "https://github.com/devicons/devicon/blob/master/icons/wordpress/wordpress-original.svg" alt="font awesone" width="40" height="40"/> </a> </a> <a href= "https://github.com/"  target="_blank"> <img src= "https://user-images.githubusercontent.com/83353551/196004287-52383ca4-d34c-4470-8e47-aaeeadbbd891.png" alt="github" width="40" height="40"/> </a> <a href= "https://code.visualstudio.com/"  target="_blank"> <img src= "https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" alt="github" width="40" height="40"/> </a> </a> <a href= "https://netlify.com/"  target="_blank"> <img src= "https://user-images.githubusercontent.com/83353551/196004531-6575851f-fc23-43d6-9cf6-e74bf03344d1.png" alt="netlify" width="40" height="40"/> </a>
-  
 
 
 ## Contact 
 <a href="https://www.linkedin.com/in/sayeda-chattopadhyay-7b33ba156/" target="_blank"> <img src="https://user-images.githubusercontent.com/83353551/195984318-dc867bbc-1288-4872-ba34-e6a4a7700535.png" alt="behance" width="40" height="40"/> </a> <a href="https://www.behance.net/gallery/111339401/UX-Portfolio" target="_blank"> <img src="https://github.com/devicons/devicon/blob/master/icons/behance/behance-original.svg" alt="behance" width="40" height="40"/> </a>
 
 
----
-### My Stats
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=sayeda-chattopadhyay&theme=dark&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
-
-
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sayeda-chattopadhyay&langs_count=6)
 
 
 
