@@ -2,15 +2,18 @@
 
   export function renderBidButtonOrEditButtons(username, bidName,id) {
 
-     const placeYourBidSection = document.querySelector("#place-your-bid-section")
+  //    const placeYourBidSection = document.querySelector("#place-your-bid-section")
 
-     console.log("placeYourBidSection:", placeYourBidSection)
+  //    console.log("placeYourBidSection:", placeYourBidSection)
 
      if(!username) {
 
     return "<div>You must be loggd in to bid</div>"
+   
    } 
 
+  console.log("user name:", username )
+  console.log("bidder name:", bidName )
     
     if(username === bidName) {
      
@@ -24,3 +27,5 @@
 
   }
 
+
+  
