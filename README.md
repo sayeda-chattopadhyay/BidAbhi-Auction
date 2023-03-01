@@ -18,19 +18,19 @@
 
 ## About
 
-Bidabhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the listings. Register users can set up and change their profile.
+Bidabhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the . Register users can set up and change their profile.
 The website is meant for users to sell their own goods as well as bid for other items listed in the website. The website is developed as part of semester-project 2 and have some specific functionalities. 
 
 ## Functionalities
 
 The following functionalities are available to the users:
 - users with stud.noroff.no email may register
-- unregistered users can browse through and see different listings
+- unregistered user can browse through and see different listings
 - registered users can login , logout, update their avatar and view available credit. 
 - registered users can create listings with a title, deadline date, media gallery and description
-- registered users can place bid to other listings.
-- registered users can view Bids made on a Listing.
-- registered users can use their credit to place bids.
+- registered users can place bid to other listings
+- registered users can view Bids made on a Listing
+registered users can use their credit toto place bids
 
 
 ## Links
@@ -45,28 +45,28 @@ The following functionalities are available to the users:
   <tbody>
     <tr>
       <th>Gantt Chart</th>
-      <td><a href="">Gantt Chart Image</a></td>
+      <td><a href="https://raw.githubusercontent.com/Anclagen/Semester-Project-2/main/planning_and_design/Gantt%20Chart%20Images/TeamGanttChart.jpg">Gantt Chart Image</a></td>
     </tr>
     <tr>
       <th>Design Prototype</th>
-      <td><a href="">Desktop Prototype</a> </br>
-    </td>
+      <td><a href="https://xd.adobe.com/view/a6dadd77-9ac4-4eb6-8244-130bfa0a4ade-f389/">Desktop Prototype</a> </br>
+      <a href="https://xd.adobe.com/view/1672b6ba-0ca5-42ce-8288-6eb261c44223-4321/">Mobile Prototype</a></td>
     </tr>
     <tr>
       <th>Style Guide</th>
-      <td><a href="">Style Guide</a></td>
+      <td><a href="https://xd.adobe.com/view/666988e0-4582-49ce-b57f-dae078f5507c-333a/">Style Guide</a></td>
     </tr>
     <tr>
-      <th>trello Board</th>
-      <td><a href="">Project Board Link</a></td>
+      <th>Kanban Board</th>
+      <td><a href="https://github.com/users/Anclagen/projects/2/views/6?layout=board">Project Board Link</a></td>
     </tr>
     <tr>
       <th>Repository</th>
-      <td><a href="">Project Repository</a></td>
+      <td><a href="https://github.com/Anclagen/Semester-Project-2">Project Repository</a></td>
     </tr>
     <tr>
       <th>Hosted Demo</th>
-      <td><a href="">Live Site</a></td>
+      <td><a href="https://anclagen.github.io/Semester-Project-2/">Live Site</a></td>
     </tr>
   </tbody>
 </table>
@@ -84,6 +84,43 @@ The following functionalities are available to the users:
 - Vscode
 - Netlify
 - Figma
+
+
+### Scripts
+
+```json
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css & live-server",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "prepare": "husky install"
+```
+
+</br>
+
+### Dependencies
+
+```json
+  "bootstrap": "^5.2.3"
+```
+
+</br>
+
+### Dev dependencies
+
+```json
+  "eslint": "^8.33.0",
+   "husky": "^8.0.3",
+   "lint-staged": "^13.1.0",
+   "live-server": "^1.1.0",
+   "prettier": "^2.8.3",
+   "sass": "^1.58.0"
+```
+
+</br>
+
 
 
 # Setting up
@@ -109,9 +146,8 @@ Download and extract the zip file or clone the project in the command line from 
 3. Watch changes to the style with:
 
    ```md
-   npm run start
+   npm run watch
    ```
-
 
 ## Contributing
 
