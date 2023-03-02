@@ -3,7 +3,7 @@
 
 # Bidabhi auction (Semester-Project-2)
 
-![Homepage Preview](/planning_and_design/images/site_readme_image.jpg)
+![Homepage Preview](/images/Logo.png)
 
 ## Table Of Content
 
@@ -20,7 +20,7 @@
 
 ## About
 
-Bidabhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the . Register users can set up and change their profile.
+BidAbhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the listings . Register users can set up and change their profile.
 The website is meant for users to sell their own goods as well as bid for other items listed in the website. The website is developed as part of semester-project 2 and have some specific functionalities. 
 
 ## Functionalities
@@ -47,28 +47,28 @@ registered users can use their credit toto place bids
   <tbody>
     <tr>
       <th>Gantt Chart</th>
-      <td><a href="https://raw.githubusercontent.com/Anclagen/Semester-Project-2/main/planning_and_design/Gantt%20Chart%20Images/TeamGanttChart.jpg">Gantt Chart Image</a></td>
+      <td><a href="">Gantt Chart Image</a></td>
     </tr>
     <tr>
       <th>Design Prototype</th>
-      <td><a href="https://xd.adobe.com/view/a6dadd77-9ac4-4eb6-8244-130bfa0a4ade-f389/">Desktop Prototype</a> </br>
-      <a href="https://xd.adobe.com/view/1672b6ba-0ca5-42ce-8288-6eb261c44223-4321/">Mobile Prototype</a></td>
+      <td><a href="">Desktop Prototype</a> </br>
+     ">Mobile Prototype</a></td>
     </tr>
     <tr>
       <th>Style Guide</th>
-      <td><a href="https://xd.adobe.com/view/666988e0-4582-49ce-b57f-dae078f5507c-333a/">Style Guide</a></td>
+      <td><a href="">Style Guide</a></td>
     </tr>
     <tr>
-      <th>Kanban Board</th>
-      <td><a href="https://github.com/users/Anclagen/projects/2/views/6?layout=board">Project Board Link</a></td>
+      <th>Trello Board</th>
+      <td><a href="">Project Board Link</a></td>
     </tr>
     <tr>
       <th>Repository</th>
-      <td><a href="https://github.com/Anclagen/Semester-Project-2">Project Repository</a></td>
+      <td><a href="">Project Repository</a></td>
     </tr>
     <tr>
       <th>Hosted Demo</th>
-      <td><a href="https://anclagen.github.io/Semester-Project-2/">Live Site</a></td>
+      <td><a href="">Live Site</a></td>
     </tr>
   </tbody>
 </table>
@@ -169,9 +169,3 @@ This project is licensed under a Creative Commons license. It is open for contri
 
 ## Contact 
 <a href="https://www.linkedin.com/in/sayeda-chattopadhyay-7b33ba156/" target="_blank"> <img src="https://user-images.githubusercontent.com/83353551/195984318-dc867bbc-1288-4872-ba34-e6a4a7700535.png" alt="behance" width="40" height="40"/> </a> <a href="https://www.behance.net/gallery/111339401/UX-Portfolio" target="_blank"> <img src="https://github.com/devicons/devicon/blob/master/icons/behance/behance-original.svg" alt="behance" width="40" height="40"/> </a>
-
-
-
-
-
-
