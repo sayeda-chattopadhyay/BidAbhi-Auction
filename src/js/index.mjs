@@ -62,8 +62,14 @@ function router() {
         templates.displayActiveListings();
         break;
 
+        case "/fashion.html":
+        handler.userLoggedIn();
+        handler.setLogoutBUttonListener();
+        templates.displayFashionListings();
+
   }
 }
 
 router();
 
+// displayFashionListings()
