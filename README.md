@@ -51,8 +51,7 @@ registered users can use their credit toto place bids
     </tr>
     <tr>
       <th>Design Prototype</th>
-      <td><a href="">Desktop Prototype</a> </br>
-     ">Mobile Prototype</a></td>
+      <td><a href="">Desktop Prototype</a></td> 
     </tr>
     <tr>
       <th>Style Guide</th>
