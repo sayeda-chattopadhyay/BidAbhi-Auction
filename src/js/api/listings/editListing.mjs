@@ -20,6 +20,12 @@ export async function editListing(listing) {
 
     const method = "put";
 
+    const tags = listing.tags.split(",")
+    console.log(tags)
+
+    const media = listing.media.split(",");
+    console.log(media);
+
     try {
 
     if (!id) {
@@ -38,7 +44,13 @@ export async function editListing(listing) {
         "Content-Type": "application/json",
       },
       method: method,
-      body: JSON.stringify(listing),
+      body: JSON.stringify({
+        title:listing.title,
+        description: listing.description,
+        tags,
+        media,
+
+      }),
     });
 
     // const json = await response.json();
