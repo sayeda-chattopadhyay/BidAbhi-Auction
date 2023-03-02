@@ -14,14 +14,14 @@
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [Licence](#license)
+- [License](#license)
 - [Developer Bio](#bio)
 - [Contact](#contact)
 
 ## About
 
-BidAbhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the listings . Register users can set up and change their profile.
-The website is meant for users to sell their own goods as well as bid for other items listed in the website. The website is developed as part of semester-project 2 and have some specific functionalities. 
+BidAbhi is an online auction website. Registered users can place bids and put up goods for auction. Unregistered users can view listings including searching the listings. Register users can set up and change their profiles.
+The website is meant for users to sell their goods as well as bid for other items listed on the website. The website is developed as part of semester project 2 and has some specific functionalities. 
 
 ## Functionalities
 
@@ -156,12 +156,12 @@ Contact if you face any issues and if you want to suggest improvements and chang
 
 ## License
 
-This project is licensed under a Creative Commons license. It is open for contributions, but please credit the project if you use the code in your own projects.
+This project is licensed under a Creative Commons license. It is open for contributions, but please credit the project if you use the code in your  projects.
 
 ## Bio
 -   UX designer and a front-end developer
 -   BSc in Physical Sciences
--   Several years experience in banking 
+-   Several years of experience in banking 
 
 <a href="https://stellular-taffy-47ab91.netlify.app">My Portfolio</a>
 
