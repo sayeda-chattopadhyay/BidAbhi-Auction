@@ -5,6 +5,7 @@ export * from "./searchListing.mjs";
 export * from "./editListing.mjs";
 export * from "./getActiveListings.mjs";
 export * from "./deleteListing.mjs";
+ export * from "./getFashionLising.mjs";
 
 // single listing
 

@@ -14,6 +14,29 @@ export function createAllProfileListingsHTML(listings) {
     const { id, title, description, media, created, endsAt, _count, tags } =
       listing;
 
+    
+  
+      const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
+        month: "short",
+        day: "numeric",
+      });
+  
+      const formattedCreatedTime = new Date(created).toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+      const formattedEndDate = new Date(endsAt).toLocaleDateString("en-us", {
+        month: "short",
+        day: "numeric",
+      });
+  
+      const formattedEndTime = new Date(endsAt).toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+
+
     allListingByProfileContainer.innerHTML += `<div class="col p-3">
                                                       <div class="card h-100 border-0 p-2">
                                                           <a href=""
@@ -36,13 +59,13 @@ export function createAllProfileListingsHTML(listings) {
                                                               <hr />
                                                               <p class="mb-0"><strong>Bids: </strong>${_count.bids}</p>
                                                               <p class="mb-0">
-                                                              <strong>Created: </strong>${created}<span class="small text-muted"
-                                                                  >, 16:20</span
+                                                              <strong>Created: </strong>${formattedCreatedDate}<span class="small text-muted"
+                                                                  >, ${formattedCreatedTime}</span
                                                               >
                                                               </p>
                                                               <p class="mb-3">
-                                                              <strong>Ends at: </strong>${endsAt}<span class="small text-muted"
-                                                                  >, 17:35</span
+                                                              <strong>Ends at: </strong>${formattedEndDate}<span class="small text-muted"
+                                                                  >, ${formattedEndTime}</span
                                                               >
                                                               </p>
                                                               <a href="/singleListing.html?id=${id}"class="btn btn-primary" style="width: 50%">

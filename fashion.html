@@ -8,7 +8,7 @@
       name="description"
       content="Explore and bid the unique items of your choice"
     />
-    <title>Listings| BidAbhi</title>
+    <title>Fashion Listings| BidAbhi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
-
+    <!-- <script src="/src/js/api/listings/getFashionLising.mjs" defer type="module"></script> -->
     <script src="/src/js/index.mjs" defer type="module"></script>
   </head>
   <body class="border border-secondary px-3">
@@ -101,23 +101,42 @@
     </nav>
     <!-- nav bar end -->
     <main>
+      <section class="container-fluid">
+        <div class="container mt-5">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/index.html">Ending Soon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/listing.html">All Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/fashion.html">Fashion</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+
+
       <section class="container-fluid mt-4">
         <!-- ending soon -->
         <div class="container bg-light shadow">
           <p class="h2 mx-5 mb-5 text-center p-4">
-            <ins>All Active listings</ins>
+            <ins>All fashion listings</ins>
           </p>
+          <p class="text-center fs-5">Style is a way to say who you are without having to speak. Explore and discover your style. </p>
           <div
             class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mx-2"
-            id="active-listings-container"
+            id="fashion-listings-container"
           ></div>
           <div class="load-more-container text-center">
-            <button
+            <!-- <button
               id="view-more"
               class="btn btn-primary show-more-results my-4"
             >
               View more
-            </button>
+            </button> -->
           </div>
         </div>
       </section>

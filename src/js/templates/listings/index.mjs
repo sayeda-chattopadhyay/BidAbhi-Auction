@@ -10,3 +10,5 @@ export * from "./displayActiveListings.mjs";
 // single listing
 
 export * from "./displaySingleListing.mjs";
+
+export * from "./displayFashionListing.mjs";
