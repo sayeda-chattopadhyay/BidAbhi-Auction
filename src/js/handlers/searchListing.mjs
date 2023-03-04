@@ -14,7 +14,6 @@ export function setSearchListingListener() {
       const formData = new FormData(form);
       const tagLowerCase = formData.get("tag").toLowerCase();
       const tag = tagLowerCase.replace(/\s+/g, ",");
-      // const tag = formData.get("tag");
       console.log("tagWithComma:", tag);
       listings.displaySearchedListings(tag);
     });
