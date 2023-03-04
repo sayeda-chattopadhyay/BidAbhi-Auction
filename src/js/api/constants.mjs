@@ -16,13 +16,13 @@ export const loginURL = `${baseURL}${authLogin}`;
 
 export const profile = "/profiles";
 export const profileURL = `${baseURL}${profile}${"/"}`;
-// console.log(profileURL);
+
 
 // Auction All listings endpoints
 
 export const listings = "/listings";
 export const listingsBaseURL = `${baseURL}${listings}`;
-// console.log(listingsBaseURL);
+
 
 // Auction Active listings endpoints
 
@@ -40,12 +40,7 @@ export const listingSorts = "?sort=created&sortOrder=desc";
 export const listingSortsURL = `${listingsBaseURL}${activeListing}`;
 
 export const singlelistingUrl = `${listingsBaseURL}${"/"}`;
-// console.log(singlelistingUrl);
 
-
-//const endsAt_url = https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18;
 
 export const endingSoonQs ="&sort=endsAt&sortOrder=asc"
-
 export const endingSoonUrl = `${activeListingURL}${endingSoonQs}`
-// console.log("endingSoonUrl :", endingSoonUrl)
