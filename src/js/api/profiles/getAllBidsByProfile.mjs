@@ -3,23 +3,23 @@ import { load } from "../../storage/index.mjs";
 import { createAllBidsByProfileHTML } from "../../renderHtml/Profile/index.mjs";
 
 const token = load("token");
-console.log(token);
-
 const profile = load("profile");
-console.log(profile);
-
 const profileName = profile.name;
-console.log(profileName);
-
 const getProfileUrl = `${profileURL}${profileName}`;
-console.log(getProfileUrl);
+
 
 const qs = "/bids?_listings=true";
+
+/**
+ * Gets all listings which the profile user bids on 
+ * @returns {Promise<Array>} Response array of all listings objects the profile user bids on .
+ */
+
+
 
 export async function getAllBidsByProfile() {
   try {
     const bidListinsUrl = `${getProfileUrl}${qs}`;
-    console.log(bidListinsUrl);
 
     const response = await fetch(bidListinsUrl, {
       headers: {
@@ -27,10 +27,6 @@ export async function getAllBidsByProfile() {
         Authorization: `Bearer ${token}`,
       },
     });
-
-    //   if (response.ok) {
-    //     return await response.json();
-    //   }
 
     const bids = await response.json();
     console.log(bids);

@@ -1,22 +1,19 @@
 import { profileURL } from "../constants.mjs";
-
 import { load } from "../../storage/index.mjs";
 import { createAllProfileListingsHTML } from "../../renderHtml/Profile/index.mjs";
 
-console.log(profileURL);
 
 const token = load("token");
-console.log(token);
-
 const profile = load("profile");
-console.log(profile);
-
 const profileName = profile.name;
-console.log(profileName);
-
 const listings = "/listings";
 const url = `${profileURL}${profileName}${listings}`;
-console.log(url);
+
+/**
+ * Gets array of listings created by profile
+ * @returns {Promise<array>} Response array of all listings objects the profile user created .
+ */
+
 
 export async function getAllListingsByProfile() {
   try {
