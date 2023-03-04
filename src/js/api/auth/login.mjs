@@ -2,6 +2,16 @@ import { loginURL } from "../constants.mjs";
 import * as storage from "../../storage/index.mjs";
 import { displayError } from "../../ui/displayErrorMessage.mjs";
 
+
+/**
+ * sends a post request to API to log in user. will redirect to home page if succesful
+ * @param {Object} profile object containing  email and password
+ * @param {string} profile.email users email
+ * @param {string} profile.password users password
+
+ */
+
+
 const method = "post";
 
 export async function login(profile) {

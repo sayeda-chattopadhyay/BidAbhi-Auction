@@ -10,6 +10,14 @@ const id = params.get("id");
 
 const qs = "/bids";
 
+/**
+ * Place bid on listing
+ * @param {Number} amount the bidding amount
+ * @returns {Promise<Array>} Response array of listing objects.
+ */
+
+
+
 export async function createBidOnlisting(bidAmount) {
   const createBidUrl = `${listingsBaseURL}${"/"}${id}${qs}`;
 
@@ -31,6 +39,7 @@ export async function createBidOnlisting(bidAmount) {
     });
 
     const json = await response.json();
+
     window.location.reload();
     return json;
   } catch (error) {

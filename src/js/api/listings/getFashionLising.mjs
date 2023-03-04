@@ -4,7 +4,10 @@ import {listingsBaseURL} from "../constants.mjs"
 import { load } from "../../storage/index.mjs";
 
 
-// get all listings that matching with the tag
+/**
+ * Get all listings tag with fashions
+ * @returns {Promise<Array>} Response array of all active listings objects.
+ */
 
 export async function getFashionlistings() {
 
@@ -27,12 +30,11 @@ export async function getFashionlistings() {
 
   if (response.ok) {
     return await response.json();
-    // const json = await response.json();
-    // console.log("fashion listing:", json)
+  
   }
 
   throw new Error("Fetching listing failed");
 }
 
-// getFashionlistings()
+
 

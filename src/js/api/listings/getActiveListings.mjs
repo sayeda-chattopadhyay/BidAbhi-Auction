@@ -3,9 +3,11 @@ console.log(activeListingURL);
 import { load } from "../../storage/index.mjs";
 
 /**
- * getActiveListings() function fetching all the active listings from server that users have created.
+ * Get all active listings
 
+ * @returns {Promise<Array>} Response array of all active listings objects.
  */
+
 
 export async function getActiveListings() {
 

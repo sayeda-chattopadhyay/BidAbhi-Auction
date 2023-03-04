@@ -1,9 +1,15 @@
 
 import {activeListingURL} from "../constants.mjs"
-
 import { load } from "../../storage/index.mjs";
 
-// get all posts that matching with the tag
+/**
+ * Get a listings
+ * @param {string} tag the listing id
+ * @returns {Promise<Array>} Response array of listing objects with the matching tag param.
+ */
+
+
+
 export async function searchListing(tag) {
 
   const qS = "&_seller=true&_tag="

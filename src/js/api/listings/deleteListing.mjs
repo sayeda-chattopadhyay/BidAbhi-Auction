@@ -3,8 +3,9 @@ import { listingsBaseURL } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
 
 /**
- * This function remove user´s listing.
- * @param {number} id // This is the data-set id retrieve from delete button to create api endpoint where the delete api request needs to be sent.
+ * Deletes a listing
+ * @param {number} id Listings id
+ * @returns {Boolean} returns true or throws error
  */
 
 export async function removeListing(id = 0) {

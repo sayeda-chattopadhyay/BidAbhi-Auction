@@ -7,8 +7,9 @@ const id = params.get("id");
 
 
 /**
- * Every listing has a unique id. Get this id from url and create Api endpoint where updated data for a specific listing needs to be sent.
- * This Async function sends updated listing to the API endpoint.
+ * Updates a specific listing.
+ * @param {Object} listing title, description, [tags], [media], endsAt
+ * @returns {Promise<Object>} returns an object with the listing details
  */
 
 

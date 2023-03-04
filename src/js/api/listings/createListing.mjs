@@ -1,8 +1,13 @@
 import { listingsBaseURL } from "../constants.mjs";
 
-// console.log(listingsBaseURL);
-
 import { load } from "../../storage/index.mjs";
+
+/**
+ * Creates a new listing
+ * @param {Object} listingData title, description, [tags], [media], endsAt
+ * @returns {Promise<Object>} returns and object with the listing details
+ */
+
 
 export async function createListing(listingData) {
   const createListingUrl = listingsBaseURL;

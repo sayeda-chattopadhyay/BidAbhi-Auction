@@ -1,22 +1,16 @@
 import { singlelistingUrl } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
-//import { displaySingleListing } from "../../templates/listings/index.mjs";
 import{createSingleListingHTML} from "../../renderHtml/Listing/singleListing.mjs"
 
-
+const querryString = document.location.search;
+const params = new URLSearchParams(querryString);
+const id = params.get("id");
 
 /**
- * getPost(id) function fetches post from api server by its unique id. Retieves the data in object and passes to
-
+ * Get a listings
+ * @param {number} id the listing id
+ * @returns {Promise<Array>} Response array of listing objects.
  */
-
-const querryString = document.location.search;
-
-const params = new URLSearchParams(querryString);
-
-const id = params.get("id");
-// const name = params.get("name");
-// console.log(name);
 
 
 export async function getSingleListing(id) {
@@ -33,8 +27,6 @@ export async function getSingleListing(id) {
 
   const token = load("token");
 
-  console.log(token);
-  console.log(getSingleListingUrl);
 
   const response = await fetch(url, {
     headers: {
@@ -56,7 +48,5 @@ export async function getSingleListing(id) {
 }
 
 getSingleListing(id);
-
-
 
 //Note- add try and catch
