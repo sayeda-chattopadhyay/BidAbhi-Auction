@@ -12,16 +12,15 @@ export function setSearchListingListener() {
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
-      const tag = formData.get("tag");
-      console.log("tag:", tag);
-
-      // below function takes tag, sends it to api, fetch listings and display html
-
+      const tagLowerCase = formData.get("tag").toLowerCase();
+      const tag = tagLowerCase.replace(/\s+/g, ",");
+      // const tag = formData.get("tag");
+      console.log("tagWithComma:", tag);
       listings.displaySearchedListings(tag);
     });
   }
 }
-
+ // below function takes tag, sends it to api, fetch listings and display html
 
 // clear Search
 
