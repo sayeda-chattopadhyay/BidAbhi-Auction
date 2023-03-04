@@ -16,6 +16,9 @@ const getProfileUrl = `${profileURL}${profileName}`;
 
 const qs = "?_listings=true";
 
+//const qs = "/bids?_listings=true";
+// const qs = "/bids?_listings=true";
+
 export async function getProfileDetails() {
   try {
     const bidListinsUrl = `${getProfileUrl}${qs}`;

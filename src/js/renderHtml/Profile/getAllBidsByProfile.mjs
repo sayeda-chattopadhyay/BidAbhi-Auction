@@ -31,7 +31,7 @@ const allBidsByProfileContainer = document.getElementById(
         minute: "2-digit",
       });
   
-      allBidsByProfileContainer.innerHTML += `<div class="col p-3">
+      allBidsByProfileContainer.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
                                                         <div class="card h-100 border-0 p-2">
                                                             <a href=""
                                                                 ><img

@@ -38,7 +38,7 @@ export function createFashionListingsHtml(listings) {
     minute: "2-digit",
   });
     
-  fashionListingsContainer.innerHTML += `<div class="col p-3 shadow-sm border border-primary">
+  fashionListingsContainer.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
                                     <div class="card border-0 p-2 shadow-sm">
                                         <a href="/singleListing.html?id=${id} class ="c-img-holder"
                                             ><img
