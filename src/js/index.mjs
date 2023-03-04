@@ -39,7 +39,7 @@ function router() {
       handler.setLogoutBUttonListener();
       handler.setCreateBidListener();
       handler.userLoggedIn();
-      handler.setDeleteButtonListener();
+      // handler.setDeleteButtonListener();
       // listings.getSingleListing();
       break;
 
@@ -53,7 +53,7 @@ function router() {
       case "/edit-item.html":
         handler.userLoggedIn();
         handler.setLogoutBUttonListener();
-        handler.setEditListingListener();
+        // handler.setEditListingListener();
         break;
 
        case "/listing.html":
