@@ -27,7 +27,8 @@ export async function setCreateBidListener() {
 if(!token){
   bidButton.disabled = true;
   bidMessage.style.display="block";
-  bidHistorySection.style.display ="none"
+  bidHistorySection.style.display ="none";
+  placeYourBidSection.style.display ="none";
   console.log(" There is no token")
   bidMessage.style.display="block";
 }else{
