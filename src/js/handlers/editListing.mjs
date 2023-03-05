@@ -1,6 +1,6 @@
 /**
  * This function selects html form , adds submit event listener to the form. collects updated new data and passes the data to the async
- * function updatePost(post) to send it to the APi end point in order to updated the post.
+ * function editListing(listing) to send it to the APi end point in order to updated the listing.
  */
 
 import { editListing } from "../api/listings/index.mjs"
