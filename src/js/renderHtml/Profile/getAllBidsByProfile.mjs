@@ -63,7 +63,7 @@ const allBidsByProfileContainer = document.getElementById(
                                                                     >, ${formattedEndTime}</span
                                                                 >
                                                                 </p>
-                                                                <a href="/singleListing.html?id=${listing.id}"class="btn btn-primary" style="width: 50%">
+                                                                <a href="/singlelisting.html?id=${listing.id}"class="btn btn-primary" style="width: 50%">
                                                                             <strong>View Item</strong>
                                                                         </a>
                                                             </div>

@@ -75,7 +75,7 @@ export function createActiveListingsHtml(listings) {
                                                 >, ${formattedEndTime}</span
                                             >
                                             </p>
-                                             <a href="/singleListing.html?id=${id}"class="btn btn-primary c-link">
+                                             <a href="/singlelisting.html?id=${id}"class="btn btn-primary c-link">
                                                         <strong>View Item</strong>
                                                     </a>
                                         </div>

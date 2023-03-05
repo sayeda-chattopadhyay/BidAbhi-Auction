@@ -76,7 +76,7 @@ export function createAllProfileListingsHTML(listings) {
                                                                   >, ${formattedEndTime}</span
                                                               >
                                                               </p>
-                                                              <a href="/singleListing.html?id=${id}"class="btn btn-primary" style="width: 50%">
+                                                              <a href="/singlelisting.html?id=${id}"class="btn btn-primary" style="width: 50%">
                                                                           <strong>View Item</strong>
                                                                       </a>
                                                           </div>
