@@ -8,9 +8,6 @@ import { displayAllListings } from "../templates/listings/displayalllistings.mjs
  */
 
 
-
-
-
 export function setCreateListingListener() {
   const form = document.querySelector("#createListing");
 
