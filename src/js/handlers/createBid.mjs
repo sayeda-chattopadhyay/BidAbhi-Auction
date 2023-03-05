@@ -2,34 +2,36 @@ import { createBidOnlisting } from "../api/listings/index.mjs";
 import {load} from "../storage/index.mjs"
 
 
-export async function setCreateBidListener() {
-    const form = document.querySelector("form#bid-form");
-   console.log("Bid form", form)
+/**
+ * Place bid on listing
+ * it takes bid amount and sends to api if there is token
+ */
 
+
+
+export async function setCreateBidListener() {
+  const form = document.querySelector("form#bid-form");
   const bidButton = document.querySelector("#bid-button");
-  console.log("bidButton:", bidButton)
 
   const bidMessage = document.querySelector("#bid-message");
-  //const bidSectionContainer = document.querySelector("#bid-section");
+  
   const noCreditMessage = document.querySelector("#noCredit-message")
   const bidHistorySection = document.getElementById("bid-history-section");
 
   const placeYourBidSection = document.querySelector("#place-your-bid-section")
-  console.log("bidSection :", placeYourBidSection)
-  
+ 
   noCreditMessage.style.display ="none";
   bidMessage.style.display="none";
-  // 
+
 
   const token = load("token")
-  console.log("token:", token)
+
 
 if(!token){
   bidButton.disabled = true;
   bidMessage.style.display="block";
   bidHistorySection.style.display ="none";
   placeYourBidSection.style.display ="none";
-  console.log(" There is no token")
   bidMessage.style.display="block";
 }else{
  
