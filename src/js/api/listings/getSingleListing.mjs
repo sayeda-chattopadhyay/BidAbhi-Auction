@@ -1,6 +1,6 @@
 import { singlelistingUrl } from "../constants.mjs";
 import { load } from "../../storage/index.mjs";
-import{createSingleListingHTML} from "../../renderHtml/Listing/singleListing.mjs"
+import{createSingleListingHTML} from "../../renderhtml/listing/singlelisting.mjs"
 
 const querryString = document.location.search;
 const params = new URLSearchParams(querryString);
