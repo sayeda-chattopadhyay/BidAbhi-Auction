@@ -12,19 +12,22 @@ $black: #000;
 
 $blue: #0053b3;
 $indigo: #5e0de0;
-$purple: #5a23c1;
+//$purple: #5a23c1;
 $pink: #d63384;
 $red: #d71c2fe7;
-$orange: #cb4b30;
-$yellow: #ffc107;
+
+//$yellow: #ffc107;
 $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
-// Color Pallete
+// Customised Color Pallete
 
 $searchBtn: #5cb6d5;
 $footerColor: #355969;
+$yellow: #fbcd25;
+$purple: #772278;
+$orange: #cb4b30;
 
 $container-max-widths: (
   sm: 540px,
@@ -34,8 +37,9 @@ $container-max-widths: (
   xxl: 1320px,
 );
 
-$primary: $orange;
-$secondary: $blue;
+// $primary: $orange;
+$primary: $purple;
+$secondary: $orange;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
@@ -57,28 +61,6 @@ $theme-colors: (
   "footer": $footerColor,
   "searchBtn": $searchBtn,
   "importantText": $red,
-);
-
-// Default breakpoints
-
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1400px
-// ) ;
-
-// Customised breakpoints
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
 );
 
 // Font family

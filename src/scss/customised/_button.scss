@@ -1,0 +1,20 @@
+// card
+
+.listing-card {
+  transition: all 0.2s;
+}
+
+.listing-card:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.viewItem {
+  background-color: rgb(12, 95, 85);
+}
+
+// All button
+.viewItem:hover {
+  background-color: rgb(95, 12, 12);
+  color: white;
+}

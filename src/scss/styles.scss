@@ -2,6 +2,14 @@
 
 @import "variables";
 
+@import "./customised/loader";
+
+@import "./customised/header";
+
+@import "./customised/button";
+
+@import "./customised/image";
+
 /* Bootstrap default styles */
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -18,8 +26,6 @@
 //   display: block;
 // }
 
-// * {
-//   outline: 2px solid red;
-// }
-
-
+* {
+  outline: 2px solid red;
+}

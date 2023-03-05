@@ -1,0 +1,76 @@
+.navbar {
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  height: 60px;
+  padding-left: 20px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.profileThumbnail img {
+  width: 50px;
+  height: 50px;
+}
+
+.c-item {
+  height: 640px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.overview {
+  height: 180px;
+  background-color: #fbcd25;
+  // background-color: #d3dae1;
+}
+
+// nav link
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: $primary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+//customised card style
+
+.c-image {
+  height: 22rem;
+  object-fit: cover;
+}
+
+.c-description {
+  min-height: 100px;
+}
+
+.c-link {
+  width: 50%;
+
+  // box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25)
+}
+.c-link:hover {
+  background-color: #d3dae1;
+  color: black;
+}
