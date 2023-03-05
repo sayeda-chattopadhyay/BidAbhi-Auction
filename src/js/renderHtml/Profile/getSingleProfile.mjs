@@ -23,10 +23,9 @@ export function createSingleProfileHTML(profile) {
       <div class="col-12 col-md-8 col-lg-6">
         <img
           src="${profile.avatar}"
-          class="d-block mx-lg-auto img-fluid rounded-circle"
+          class="d-block mx-lg-auto img-fluid rounded-circle profile-image"
           alt="${profile.name}"
-          width="300"
-          height="300"
+         
           loading="lazy"
         />
       </div>
@@ -41,7 +40,7 @@ export function createSingleProfileHTML(profile) {
           </p>
         </div>
         <div
-          class="d-flex justify-content-between align-items-center border border-gray p-2" >
+          class="d-flex justify-content-between align-items-center border border-grey p-2" >
           <div class="d-f flex-column">
             <p class="fw-bold" id="userPosts">Listings</p>
             <p>${profile.listings.length}</p>
@@ -60,7 +59,7 @@ export function createSingleProfileHTML(profile) {
         <div class="my-4">
           <a
             href="/add-item.html"
-            class="w-50 btn btn-lg btn-secondary"
+            class="w-50 btn btn-lg btn-primary"
             type="submit"
           >
             Add Item
