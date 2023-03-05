@@ -3,6 +3,8 @@ import { register } from "../api/auth/signUp.mjs";
 export function setRegisterFormListener() {
   const form = document.querySelector("#registerForm");
 
+  console.log("form:", form)
+
   if (form) {
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -20,3 +22,5 @@ export function setRegisterFormListener() {
     });
   }
 }
+
+setRegisterFormListener()

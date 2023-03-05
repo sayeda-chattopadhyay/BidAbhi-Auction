@@ -12,13 +12,17 @@ import { registerURL } from "../constants.mjs";
  * @param {string} profile.password users password
   * @param {string} profile.avatar users password
  */
+ const url = registerURL;
 
+  console.log(url)
 
-const method = "post";
+  const method = "post";
 
-export async function register(profile) {
+ export async function register(profile) {
   try {
-    const url = registerURL;
+    // const url = registerURL;
+
+    // console.log(url)
 
     const userToRegister = {
       headers: {
@@ -38,6 +42,8 @@ export async function register(profile) {
     // }
 
     const result = await response.json();
+    confirm("You are now registered.Please Log In");
+     window.location.replace("/login.html");
 
   // if(result){
 
@@ -49,11 +55,8 @@ export async function register(profile) {
   //     return Error;
   //   }
 
- 
-
-    window.location.replace("/login.html");
+    // window.location.replace("/login.html");
     return result;
-
   
   } catch (error) {
     console.log(error);

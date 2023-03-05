@@ -13,7 +13,7 @@ function router() {
       break;
 
     case "/signUp.html":
-      handler.setRegisterFormListener();
+      // handler.setRegisterFormListener();
       break;
 
     case "/profile.html":
