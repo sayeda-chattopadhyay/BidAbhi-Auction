@@ -8,7 +8,6 @@ import {load} from "../storage/index.mjs"
  */
 
 
-
 export async function setCreateBidListener() {
   const form = document.querySelector("form#bid-form");
   const bidButton = document.querySelector("#bid-button");
