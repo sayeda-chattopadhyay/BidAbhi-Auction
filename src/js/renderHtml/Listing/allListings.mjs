@@ -1,7 +1,13 @@
+
+/**
+ * Create Html for All Listing
+ * @param {Object} listings
+ */
+
+
+
 export function createAllListingsHTML(listings) {
   const listingsContainer = document.getElementById("listingsContainer");
-
-  //   console.log(listings);
 
   // showing error message if there is no listings
 

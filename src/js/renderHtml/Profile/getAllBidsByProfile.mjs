@@ -1,6 +1,9 @@
+/**
+ * Create Html for All Listings the users bid on
+ * @param {Object} bids
+ */
 
 
-// innerHtml
 const allBidsByProfileContainer = document.getElementById(
     "allBidsByProfileContainer"
   );

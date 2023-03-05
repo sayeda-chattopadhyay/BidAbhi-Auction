@@ -1,3 +1,12 @@
+
+/** 
+ * Stores access token and profile details in local storage
+ * @param {string} key
+ * @param {number} key
+ */
+
+
+
 export function save(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
   }

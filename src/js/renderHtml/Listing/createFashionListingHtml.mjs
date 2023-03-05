@@ -1,11 +1,18 @@
 
+/**
+ * Create Html for All fashion Listing
+ * @param {Object} listings
+ */
+
+
+
 const fashionListingsContainer = document.querySelector("#fashion-listings-container");
 
-console.log(fashionListingsContainer)
+
 
 export function createFashionListingsHtml(listings) {
     fashionListingsContainer.innerHTML ="";
-    console.log(listings);
+   
    listings.forEach(function (listing) {
     const { id, title, description, media, created, endsAt, _count, tags} =
     listing; // destructuring
@@ -16,7 +23,7 @@ export function createFashionListingsHtml(listings) {
     imgMedia = ["/images/no-image-2.jpg"];
   }
 
-//  let sellerName = seller.name;
+
 
   const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
     month: "short",

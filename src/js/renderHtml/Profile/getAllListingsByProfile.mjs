@@ -1,4 +1,12 @@
-// innerHtml
+
+/**
+ * Create Html for All Listings the user created
+ * @param {Object} listings
+ */
+
+
+
+
 const allListingByProfileContainer = document.getElementById(
   "allListingByProfileContainer"
 );

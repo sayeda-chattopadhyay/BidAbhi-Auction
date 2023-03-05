@@ -1,11 +1,17 @@
+/**
+ * Create Html for All Active Listing
+ * @param {Object} listings
+ */
+
+
+
 
 const activeListingsContainer = document.querySelector("#active-listings-container");
 
-console.log(activeListingsContainer)
 
 export function createActiveListingsHtml(listings) {
     activeListingsContainer.innerHTML ="";
-    console.log(listings);
+ 
    listings.forEach(function (listing) {
     const { id, title, description, media, created, endsAt, _count, tags} =
     listing; // destructuring

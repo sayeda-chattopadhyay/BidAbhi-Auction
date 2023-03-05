@@ -1,40 +1,25 @@
 
- import {load} from "../../storage/index.mjs";
+ /**
+ * Create Html for Single Listing
+ * @param {Object} listing
+ */
 
- import {renderBidButtonOrEditButtons} from "../../templates/profile/getSingleListingByProfile.mjs"
-
-import {setDeleteButtonListener} from "../../handlers/index.mjs"
 
 export function createSingleListingHTML(listing) {
 
- const profile = load("profile");
-
- const profileName = profile.name;
-
- console.log("ProfileName:",profileName);
 
   const singleListingContainer = document.getElementById(
     "singleListingContainer"
   );
 
-  // const placeYourBidSection = document.querySelector("#place-your-bid-section")
-
-  // console.log("placeYourBidSection",placeYourBidSection)
-
-  // placeYourBidSection.style.display ="block"
-
-  // const editDeleteBidBtnContainer = document.querySelector("#edit-delete-bid-btn-container")
-  // console.log("editDeleteBidBtnContainer",editDeleteBidBtnContainer)
-
 
   const bidHistory = document.getElementById("bidHistory");
 
-  const { id,title, description, media, bids, created, endsAt, seller, _count } =
+  const { title, description, media, bids, created, endsAt, seller, _count } =
     listing;
 
     const sellerName = seller.name;
-    console.log("sellerName:", sellerName)
-
+   
 
   let imgMedia = media;
 
@@ -44,7 +29,6 @@ export function createSingleListingHTML(listing) {
 
 
   const bidsHistory = bids;
-  console.log("bidsHistory Id:", bidsHistory)
 
  
 
@@ -95,7 +79,7 @@ export function createSingleListingHTML(listing) {
         </div>  
         <hr>
         <div class="my-3">
-        <div>${renderBidButtonOrEditButtons(profileName,sellerName,id)}</div>  
+
         </div>  
     </div>
 </div> `;
@@ -136,12 +120,8 @@ export function createSingleListingHTML(listing) {
                                 </div>
                               </li> `;
   });
-  setDeleteButtonListener();
+  
 
 }
-
-
-
-
 
 
