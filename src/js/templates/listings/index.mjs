@@ -1,14 +1,14 @@
-export * from "./displaySearchedListings.mjs";
+export * from "./displaysearchedlistings.mjs";
 
 // all listing
-export * from "./displayAllListings.mjs";
+export * from "./displayalllistings.mjs";
 
 // active listings
 
-export * from "./displayActiveListings.mjs";
+export * from "./displayactivelistings.mjs";
 
 // single listing
 
-export * from "./displaySingleListing.mjs";
+export * from "./displaysinglelisting.mjs";
 
-export * from "./displayFashionListing.mjs";
+export * from "./displayfashionlisting.mjs";

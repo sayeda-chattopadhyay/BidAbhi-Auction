@@ -3,9 +3,14 @@
  * Create Html for Single Listing
  * @param {Object} listing
  */
+  
+  // import { load } from "../../storage/index.mjs";
 
+ 
 
 export function createSingleListingHTML(listing) {
+
+  // const token = load("token");
 
 
   const singleListingContainer = document.getElementById(

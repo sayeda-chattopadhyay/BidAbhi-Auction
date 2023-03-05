@@ -1,6 +1,6 @@
 import { loginURL } from "../constants.mjs";
 import * as storage from "../../storage/index.mjs";
-import { displayError } from "../../ui/displayErrorMessage.mjs";
+import { displayError } from "../../ui/displayerrormessage.mjs";
 
 
 /**

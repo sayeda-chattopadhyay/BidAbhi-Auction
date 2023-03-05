@@ -1,6 +1,6 @@
 import * as listings from "../templates/listings/index.mjs";
 
-import {displayAllListings} from "../templates/listings/displayAllListings.mjs";
+import {displayAllListings} from "../templates/listings/displayalllistings.mjs";
 
 
 

@@ -1,5 +1,5 @@
-import { createListing } from "../api/listings/createListing.mjs";
-import { displayAllListings } from "../templates/listings/displayAllListings.mjs";
+import { createListing } from "../api/listings/createlisting.mjs";
+import { displayAllListings } from "../templates/listings/displayalllistings.mjs";
 
 
 /**

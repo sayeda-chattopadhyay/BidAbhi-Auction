@@ -1,3 +1,3 @@
 
-export * from "./displayLoader.mjs";
-export * from "./displayErrorMessage.mjs";
+export * from "./displayloader.mjs";
+export * from "./displayerrormessage.mjs";
