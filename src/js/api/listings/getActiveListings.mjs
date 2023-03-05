@@ -1,5 +1,5 @@
 import { activeListingURL } from "../constants.mjs";
-console.log(activeListingURL);
+// console.log(activeListingURL);
 import { load } from "../../storage/index.mjs";
 
 /**
@@ -24,8 +24,6 @@ export async function getActiveListings() {
     },
   });
 
-//  const listings = await response.json();
-//  console.log("listings", listings)
 
   if (response.ok) {
     return await response.json();
