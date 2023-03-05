@@ -1,6 +1,16 @@
 import { createListing } from "../api/listings/createListing.mjs";
 import { displayAllListings } from "../templates/listings/displayAllListings.mjs";
 
+
+/**
+ * Create new listing
+ * it takes listing data from form and sends to api.
+ */
+
+
+
+
+
 export function setCreateListingListener() {
   const form = document.querySelector("#createListing");
 
