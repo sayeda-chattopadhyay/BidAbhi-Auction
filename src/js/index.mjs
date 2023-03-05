@@ -12,7 +12,7 @@ function router() {
       handler.setLoginFormListener();
       break;
 
-    case "/signUp.html":
+    case "/signup.html":
       // handler.setRegisterFormListener();
       break;
 
@@ -35,7 +35,7 @@ function router() {
       break;
    
 
-    case "/singleListing.html":
+    case "/singlelisting.html":
       handler.setLogoutBUttonListener();
       handler.setCreateBidListener();
       handler.userLoggedIn();
