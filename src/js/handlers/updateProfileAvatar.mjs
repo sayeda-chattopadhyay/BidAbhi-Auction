@@ -1,4 +1,4 @@
-import { updateProfileAvatar } from "../api/profiles/updateProfileAvatar.mjs";
+import { updateProfileAvatar } from "../api/profiles/updateprofileavatar.mjs";
 
 
 /**
