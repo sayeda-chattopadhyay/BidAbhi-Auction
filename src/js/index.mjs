@@ -12,9 +12,9 @@ function router() {
       handler.setLoginFormListener();
       break;
 
-    case "/signUp.html":
-      // handler.setRegisterFormListener();
-      break;
+    // case "/signUp.html":
+    //   // handler.setRegisterFormListener();
+    //   break;
 
     case "/profile.html":
       handler.setLogoutBUttonListener();
