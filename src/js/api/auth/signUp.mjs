@@ -1,8 +1,6 @@
 import { registerURL } from "../constants.mjs";
 // import { displayError } from "../../ui/displayErrorMessage.mjs";
 
-// const confirmMessage = document.getElementById("confirm-message")
-// console.log(confirmMessage)
 
 /**
  * Send users` registered data to api.On succesful register it will go to login page to log in. 
@@ -20,10 +18,7 @@ import { registerURL } from "../constants.mjs";
 
  export async function register(profile) {
   try {
-    // const url = registerURL;
-
-    // console.log(url)
-
+   
     const userToRegister = {
       headers: {
         "content-Type": "application/json",
@@ -45,17 +40,7 @@ import { registerURL } from "../constants.mjs";
     confirm("You are now registered.Please Log In");
      window.location.replace("/login.html");
 
-  // if(result){
-
-  //   confirm("You are now registered.Please Log In");
-
-  //   confirmMessage.innerHTML += `<div class="text-center">Your are successsfully registered your account. Please Log In</div>`
-     
-  //   }else{
-  //     return Error;
-  //   }
-
-    // window.location.replace("/login.html");
+ 
     return result;
   
   } catch (error) {
