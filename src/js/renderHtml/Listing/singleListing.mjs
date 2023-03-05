@@ -53,15 +53,15 @@ export function createSingleListingHTML(listing) {
   });
 
   singleListingContainer.innerHTML += `<div class="row align-items-center justify-content-cente g-5 py-5">
-  <div class="col-12 col-md-5 col-lg-6">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 single-listing-imgage">
       <img
           src="${imgMedia}"
-          class="d-block mx-lg-auto c-image"
+          class="d-block mx-lg-auto single-imgage"
           alt="${title}" 
           loading="lazy"
       />
   </div>
-  <div class="col-12 col-md-7 col-md-6 col-lg-6 d-flex flex-column">
+  <div class="col-12 col-sm-12 col-md-6 col-md-6 col-lg-6 d-flex flex-column">
         <div class="my-3">
             <p class="h1">${title}</p>
             <p class="lh-lg fs-6 c-description" id="item-Description">
